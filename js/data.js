@@ -176,7 +176,7 @@ const DATA = {
           cardiac: {
             pslax: { normal: true, gif: "assets/gifs/cp3-pneumonia/pslax.gif", label: "Normal LV size and function",
               interpretation: "Normal chamber size and contractility, no pericardial effusion. A normal cardiac exam here argues against a cardiac cause of this patient's chest pain." },
-            psax: { normal: true, gif: "", label: "Normal RV and LV size",
+            psax: { normal: true, gif: "assets/gifs/cp3-pneumonia/psax.gif", label: "Normal RV and LV size",
               interpretation: "Normal circular LV cross-section, no septal flattening or RV strain." },
             apical4: { normal: true, gif: "assets/gifs/cp3-pneumonia/apical4.gif", label: "Normal four-chamber view",
               interpretation: "Normal chamber sizes and systolic function, no effusion." },
