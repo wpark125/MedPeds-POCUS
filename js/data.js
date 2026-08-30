@@ -293,7 +293,7 @@ const DATA = {
           },
           abdomen: {
             ruq: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/RUQ - ascities-pleural effusion.gif", label: "Ascites and a nodular liver surface",
-              interpretation: "A large amount of free fluid (ascites) surrounds the liver, and the liver surface itself appears nodular and irregular rather than smooth — a sonographic sign of cirrhotic architecture. This directly explains the patient's tense, distended abdomen." },
+              interpretation: "A large amount of free fluid (ascites) surrounds the liver, and the liver itself seems compressed" },
             luq: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/LUQ - Ascities.gif", label: "Ascites tracking around the spleen",
               interpretation: "Free fluid is also seen in the splenorenal recess, confirming this is large-volume ascites rather than an isolated perihepatic collection." },
             suprapubic: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/Suprapubic - ascites.gif", label: "Ascites layering in the pelvis",
