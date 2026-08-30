@@ -292,11 +292,11 @@ const DATA = {
               interpretation: "A smaller effusion is also present on the left, consistent with the bilateral third-spacing seen in decompensated cirrhosis with severe hypoalbuminemia." }
           },
           abdomen: {
-            ruq: { normal: false, gif: "", label: "Ascites and a nodular liver surface",
+            ruq: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/RUQ - ascities-pleural effusion.gif", label: "Ascites and a nodular liver surface",
               interpretation: "A large amount of free fluid (ascites) surrounds the liver, and the liver surface itself appears nodular and irregular rather than smooth — a sonographic sign of cirrhotic architecture. This directly explains the patient's tense, distended abdomen." },
-            luq: { normal: false, gif: "", label: "Ascites tracking around the spleen",
+            luq: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/LUQ - Ascities.gif", label: "Ascites tracking around the spleen",
               interpretation: "Free fluid is also seen in the splenorenal recess, confirming this is large-volume ascites rather than an isolated perihepatic collection." },
-            suprapubic: { normal: false, gif: "", label: "Ascites layering in the pelvis",
+            suprapubic: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/Suprapubic - ascites.gif", label: "Ascites layering in the pelvis",
               interpretation: "Free fluid layers in the most dependent pelvic recess, as expected with large-volume ascites in a supine patient." },
             ivc: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/ivc.gif", label: "Dilated IVC from intra-abdominal pressure",
               interpretation: "The IVC appears dilated with reduced respiratory collapse — but in this context that reflects the mechanical effect of markedly elevated intra-abdominal pressure from tense ascites compressing the IVC, not an elevated right atrial pressure from cardiac dysfunction. Pairing this with a hyperdynamic, structurally normal heart is what distinguishes this case from cardiogenic pulmonary edema." }
@@ -342,7 +342,7 @@ const DATA = {
           abdomen: {
             ruq: { normal: true, gif: "assets/gifs/sob3-malignant-effusion/RUQ-Normal.gif", label: "No free fluid, normal liver",
               interpretation: "No free fluid and no obvious hepatic lesions on this screening view, though this is not a substitute for dedicated cross-sectional imaging if metastatic disease is suspected." },
-            luq: { normal: true, gif: "assets/gifs/sob3-malignant-effusion/LUQ - Mass.gif", label: "No free fluid, normal spleen",
+            luq: { normal: false, gif: "assets/gifs/sob3-malignant-effusion/LUQ - Mass.gif", label: "No free fluid, normal spleen",
               interpretation: "Solid mass noted above diaphram with para-malignant effusion" },
             suprapubic: { normal: true, gif: "assets/gifs/sob3-malignant-effusion/Pelvic - Normal.gif", label: "No free fluid",
               interpretation: "No free fluid in the pelvis — the fluid burden in this patient is confined to the left pleural space rather than reflecting a systemic third-spacing process." },
