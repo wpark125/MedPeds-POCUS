@@ -340,11 +340,11 @@ const DATA = {
               interpretation: "A large anechoic-to-complex pleural effusion is seen at the left PLAPS point, with a wedge of compressed, atelectatic lung tissue floating within it — sometimes described as the \"jellyfish sign\" as it billows with respiration and cardiac pulsation. Given this patient's smoking history, weight loss, and lack of any cardiac or renal explanation, a malignant pleural effusion should be high on the differential; thoracentesis with cytology is the next step." }
           },
           abdomen: {
-            ruq: { normal: true, gif: "", label: "No free fluid, normal liver",
+            ruq: { normal: true, gif: "assets/gifs/sob3-malignant-effusion/RUQ-Normal.gif", label: "No free fluid, normal liver",
               interpretation: "No free fluid and no obvious hepatic lesions on this screening view, though this is not a substitute for dedicated cross-sectional imaging if metastatic disease is suspected." },
-            luq: { normal: true, gif: "", label: "No free fluid, normal spleen",
-              interpretation: "No free fluid." },
-            suprapubic: { normal: true, gif: "", label: "No free fluid",
+            luq: { normal: true, gif: "assets/gifs/sob3-malignant-effusion/LUQ - Mass.gif", label: "No free fluid, normal spleen",
+              interpretation: "Solid mass noted above diaphram with para-malignant effusion" },
+            suprapubic: { normal: true, gif: "assets/gifs/sob3-malignant-effusion/Pelvic - Normal.gif", label: "No free fluid",
               interpretation: "No free fluid in the pelvis — the fluid burden in this patient is confined to the left pleural space rather than reflecting a systemic third-spacing process." },
             ivc: { normal: true, gif: "assets/gifs/sob3-malignant-effusion/ivc.gif", label: "Normal caliber and collapse",
               interpretation: "Normal IVC size and respiratory variation, another point against a cardiac or volume-overload explanation for this patient's effusion and dyspnea." }
