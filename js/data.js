@@ -78,33 +78,33 @@ const DATA = {
         ],
         findings: {
           cardiac: {
-            pslax: { normal: true, gif: "", label: "Normal LV size and systolic function",
-              interpretation: "Normal left ventricular cavity size and contractility. No pericardial effusion. RV size is difficult to judge reliably from this view — assess RV in PSAX and apical 4-chamber instead." },
-            psax: { normal: false, gif: "", label: "RV dilation with septal flattening — \"D-sign\"",
+            pslax: { normal: false, gif: "assets/gifs/cp1-pe/pslax.gif", label: "RV enlargement visible even on PSLAX",
+              interpretation: "PSAX and apical 4-chamber are the primary views for assessing the right ventricle, but here the RV is already visibly enlarged in this PSLAX view too, with the RV cavity taking up an abnormally large portion of the anterior far field relative to the LV. No pericardial effusion." },
+            psax: { normal: false, gif: "assets/gifs/cp1-pe/psax.gif", label: "RV dilation with septal flattening — \"D-sign\"",
               interpretation: "The interventricular septum is flattened and bows into the left ventricle during systole, producing a \"D-shaped\" LV cross-section instead of the normal circle. This reflects acute RV pressure overload from pulmonary embolism." },
-            apical4: { normal: false, gif: "", label: "RV:LV ratio > 1, McConnell's sign",
-              interpretation: "The right ventricle is dilated and larger than the left ventricle (RV:LV ratio > 1, normal is < 0.6). There is akinesis of the mid RV free wall with preserved contractility of the RV apex — McConnell's sign — a finding fairly specific for acute PE." },
-            subcostal4: { normal: false, gif: "", label: "RV enlargement, confirms apical findings",
-              interpretation: "Confirms RV dilation seen in the apical view. This window is also used to obtain the IVC — see Abdomen tab." }
+            apical4: { normal: false, gif: "assets/gifs/cp1-pe/apical4.gif", label: "McConnell's sign with visible RV clot",
+              interpretation: "The right ventricle is dilated and larger than the left ventricle (RV:LV ratio > 1, normal is < 0.6), with akinesis of the mid RV free wall and preserved contractility of the RV apex — McConnell's sign. A mobile echogenic thrombus is also visible within the RV, confirming clot-in-transit — a dramatic and high-risk finding that changes management and prognosis." },
+            subcostal4: { normal: false, gif: "assets/gifs/cp1-pe/subcostal4.gif", label: "Clot in transit",
+              interpretation: "From the subcostal window, a serpentine, mobile thrombus is again visible within the dilated right heart, confirming the clot-in-transit seen on the apical view from a second angle. This window is also used to obtain the IVC — see Abdomen tab." }
           },
           lung: {
-            anteriorRight: { normal: true, gif: "", label: "Lung sliding present, A-lines",
+            anteriorRight: { normal: true, gif: "assets/gifs/cp1-pe/anterior-right.gif", label: "Lung sliding present, A-lines",
               interpretation: "Normal pleural sliding with horizontal A-lines and no B-lines. A clear anterior lung exam in a dyspneic, hypoxic patient is a classic and important negative — it argues against pulmonary edema and pneumonia and should raise suspicion for PE." },
-            anteriorLeft: { normal: true, gif: "", label: "Lung sliding present, A-lines",
+            anteriorLeft: { normal: true, gif: "assets/gifs/cp1-pe/anterior-left.gif", label: "Lung sliding present, A-lines",
               interpretation: "Symmetrically clear to the right side — lung sliding present, A-line pattern, no B-lines." },
-            posteriorRight: { normal: true, gif: "", label: "PLAPS point — no effusion",
+            posteriorRight: { normal: true, gif: "assets/gifs/cp1-pe/plaps-right.gif", label: "PLAPS point — no effusion",
               interpretation: "No anechoic stripe above the diaphragm and no spine sign. No pleural effusion or consolidation at the posterolateral alveolar and pleural syndrome (PLAPS) point." },
-            posteriorLeft: { normal: true, gif: "", label: "PLAPS point — no effusion",
+            posteriorLeft: { normal: true, gif: "assets/gifs/common/plaps-normal-1.gif", label: "PLAPS point — no effusion",
               interpretation: "Left PLAPS point is likewise clear, no effusion or consolidation." }
           },
           abdomen: {
-            ruq: { normal: true, gif: "", label: "No free fluid, normal liver",
+            ruq: { normal: true, gif: "assets/gifs/common/ruq-normal.gif", label: "No free fluid, normal liver",
               interpretation: "Morison's pouch is clear, no free fluid. Liver parenchyma appears normal." },
-            luq: { normal: true, gif: "", label: "No free fluid, normal spleen",
+            luq: { normal: true, gif: "assets/gifs/common/luq-normal.gif", label: "No free fluid, normal spleen",
               interpretation: "Splenorenal recess is clear, no free fluid." },
-            suprapubic: { normal: true, gif: "", label: "No free fluid",
+            suprapubic: { normal: true, gif: "assets/gifs/common/suprapubic-normal.gif", label: "No free fluid",
               interpretation: "Bladder is normally distended, no free fluid in the pelvis." },
-            ivc: { normal: false, gif: "", label: "Plethoric IVC, < 50% collapse",
+            ivc: { normal: false, gif: "assets/gifs/cp1-pe/ivc.gif", label: "Plethoric IVC, < 50% collapse",
               interpretation: "The IVC is dilated (> 2.1 cm) with minimal respiratory collapse (< 50% with sniff), consistent with elevated right atrial pressure from acute RV strain — fits the picture of submassive PE." }
           }
         }
@@ -126,33 +126,33 @@ const DATA = {
         ],
         findings: {
           cardiac: {
-            pslax: { normal: true, gif: "", label: "Normal LV size and function",
+            pslax: { normal: true, gif: "assets/gifs/common/pslax-normal.gif", label: "Normal LV size and function",
               interpretation: "Normal chamber size and contractility, no pericardial effusion. Included to confirm there is no tamponade physiology as an alternative explanation for this patient's symptoms." },
-            psax: { normal: true, gif: "", label: "Normal RV and LV size",
+            psax: { normal: true, gif: "assets/gifs/common/psax-normal.gif", label: "Normal RV and LV size",
               interpretation: "Normal circular LV cross-section, no septal flattening, no RV strain — argues against a large PE as the cause of his dyspnea." },
-            apical4: { normal: true, gif: "", label: "Normal four-chamber view",
+            apical4: { normal: true, gif: "assets/gifs/common/apical4-normal.gif", label: "Normal four-chamber view",
               interpretation: "Normal chamber sizes and systolic function, no effusion." },
-            subcostal4: { normal: true, gif: "", label: "Normal, used for IVC access",
+            subcostal4: { normal: true, gif: "assets/gifs/common/subcostal4-normal.gif", label: "Normal, used for IVC access",
               interpretation: "Normal cardiac size and function. Also used to obtain the IVC — see Abdomen tab." }
           },
           lung: {
-            anteriorRight: { normal: true, gif: "", label: "Lung sliding present, A-lines",
+            anteriorRight: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-1.gif", label: "Lung sliding present, A-lines",
               interpretation: "Normal lung sliding with a horizontal A-line pattern on the unaffected right side. On M-mode this produces the normal granular \"seashore sign.\"" },
-            anteriorLeft: { normal: false, gif: "", label: "Absent lung sliding — \"barcode sign\"",
+            anteriorLeft: { normal: false, gif: "assets/gifs/cp2-pneumothorax/anterior-left.gif", label: "Absent lung sliding — \"barcode sign\"",
               interpretation: "No lung sliding is seen at the left anterior chest wall, and no B-lines are present. On M-mode, the normal seashore sign is replaced by horizontal lines above and below the pleural line — the \"barcode\" or \"stratosphere\" sign — because the visceral and parietal pleura are no longer in contact. In a supine patient, free pleural air rises to the least dependent point, which is why the anterior chest is the most sensitive location to scan for pneumothorax." },
-            posteriorRight: { normal: true, gif: "", label: "PLAPS point — no effusion",
+            posteriorRight: { normal: true, gif: "assets/gifs/common/plaps-normal-2.gif", label: "PLAPS point — no effusion",
               interpretation: "Normal, no effusion or consolidation." },
-            posteriorLeft: { normal: true, gif: "", label: "PLAPS point — lung sliding present",
+            posteriorLeft: { normal: true, gif: "assets/gifs/cp2-pneumothorax/plaps-left.gif", label: "PLAPS point — lung sliding present",
               interpretation: "Lung sliding is actually still present at this dependent, posterolateral point, even though it was absent anteriorly — the lung remains opposed to the chest wall here because the free air has risen away from this more dependent zone. Sweeping the probe between an anterior point with no sliding and a lateral point with sliding restored lets you find the \"lung point\": the exact spot where sliding starts and stops. Identifying a lung point is close to 100% specific for pneumothorax and also gives a rough sense of its size — a lung point found far laterally suggests a small pneumothorax, while one found only very anteriorly (or never found at all) suggests a larger one." }
           },
           abdomen: {
-            ruq: { normal: true, gif: "", label: "No free fluid, normal liver",
+            ruq: { normal: true, gif: "assets/gifs/common/ruq-normal.gif", label: "No free fluid, normal liver",
               interpretation: "No free fluid, included for completeness in this full scan." },
-            luq: { normal: true, gif: "", label: "No free fluid, normal spleen",
+            luq: { normal: true, gif: "assets/gifs/common/luq-normal.gif", label: "No free fluid, normal spleen",
               interpretation: "No free fluid." },
-            suprapubic: { normal: true, gif: "", label: "No free fluid",
+            suprapubic: { normal: true, gif: "assets/gifs/common/suprapubic-normal.gif", label: "No free fluid",
               interpretation: "No free fluid in the pelvis." },
-            ivc: { normal: true, gif: "", label: "Normal caliber and collapse",
+            ivc: { normal: true, gif: "assets/gifs/common/ivc-normal-1.gif", label: "Normal caliber and collapse",
               interpretation: "Normal IVC size and respiratory variation — this is a simple, uncomplicated (non-tension) pneumothorax with no evidence of the obstructive shock physiology a tension pneumothorax would cause." }
           }
         }
@@ -194,11 +194,11 @@ const DATA = {
               interpretation: "Left PLAPS is clear, no effusion or consolidation — the process is unilateral, consistent with a lobar pneumonia rather than a diffuse process like pulmonary edema." }
           },
           abdomen: {
-            ruq: { normal: true, gif: "", label: "No free fluid, normal liver",
+            ruq: { normal: true, gif: "assets/gifs/common/ruq-normal.gif", label: "No free fluid, normal liver",
               interpretation: "No free fluid, normal liver architecture." },
-            luq: { normal: true, gif: "", label: "No free fluid, normal spleen",
+            luq: { normal: true, gif: "assets/gifs/common/luq-normal.gif", label: "No free fluid, normal spleen",
               interpretation: "No free fluid." },
-            suprapubic: { normal: true, gif: "", label: "No free fluid",
+            suprapubic: { normal: true, gif: "assets/gifs/common/suprapubic-normal.gif", label: "No free fluid",
               interpretation: "No free fluid in the pelvis." },
             ivc: { normal: true, gif: "assets/gifs/cp3-pneumonia/ivc.gif", label: "Normal caliber and collapse",
               interpretation: "Normal IVC size and respiratory variation, consistent with euvolemia and arguing against a volume-overloaded or obstructive process as the cause of this patient's hypoxia." }
@@ -224,33 +224,33 @@ const DATA = {
         ],
         findings: {
           cardiac: {
-            pslax: { normal: false, gif: "", label: "Dilated LV, reduced contractility",
+            pslax: { normal: false, gif: "assets/gifs/sob1-chf/pslax.gif", label: "Dilated LV, reduced contractility",
               interpretation: "The left ventricle is dilated with visibly reduced wall excursion and a narrow separation between the mitral valve E-point and septum (increased EPSS), consistent with a reduced ejection fraction." },
-            psax: { normal: false, gif: "", label: "Reduced fractional shortening",
+            psax: { normal: false, gif: "assets/gifs/sob1-chf/psax.gif", label: "Reduced fractional shortening",
               interpretation: "The LV cavity fails to fully close down in systole — reduced fractional area change confirms globally depressed systolic function." },
-            apical4: { normal: false, gif: "", label: "Global hypokinesis, dilated LA",
+            apical4: { normal: false, gif: "assets/gifs/sob1-chf/apical4.gif", label: "Global hypokinesis, dilated LA",
               interpretation: "All four walls contract poorly (global hypokinesis) with a visually estimated EF in the 25–30% range. The left atrium is dilated, consistent with chronically elevated filling pressures." },
-            subcostal4: { normal: false, gif: "", label: "Confirms reduced EF",
+            subcostal4: { normal: false, gif: "assets/gifs/sob1-chf/subcostal4.gif", label: "Confirms reduced EF",
               interpretation: "Same globally reduced systolic function seen from the subcostal window, useful when apical windows are technically difficult. Also used to obtain the IVC — see Abdomen tab." }
           },
           lung: {
-            anteriorRight: { normal: false, gif: "", label: "Diffuse B-lines — \"white lung\"",
+            anteriorRight: { normal: false, gif: "assets/gifs/sob1-chf/anterior-right.gif", label: "Diffuse B-lines — \"white lung\"",
               interpretation: "Three or more confluent B-lines per rib space across multiple anterior zones, coalescing into a \"white lung\" pattern. This reflects interstitial and alveolar edema." },
-            anteriorLeft: { normal: false, gif: "", label: "Diffuse B-lines — \"white lung\"",
+            anteriorLeft: { normal: false, gif: "assets/gifs/sob1-chf/anterior-left.gif", label: "Diffuse B-lines — \"white lung\"",
               interpretation: "Mirrors the right side — diffuse, bilateral, symmetric B-lines. Bilateral symmetric B-lines strongly favor a cardiogenic cause over a focal pneumonia." },
-            posteriorRight: { normal: false, gif: "", label: "PLAPS point — pleural effusion",
+            posteriorRight: { normal: false, gif: "assets/gifs/sob1-chf/plaps-right.gif", label: "PLAPS point — pleural effusion",
               interpretation: "An anechoic space is seen above the diaphragm with a visible spine sign, consistent with a right pleural effusion and associated compressive atelectasis." },
-            posteriorLeft: { normal: false, gif: "", label: "PLAPS point — pleural effusion",
-              interpretation: "A smaller but present left pleural effusion, consistent with bilateral decompensated heart failure." }
+            posteriorLeft: { normal: false, gif: "assets/gifs/sob1-chf/plaps-left.gif", label: "PLAPS point — B-lines and pleural effusion",
+              interpretation: "A smaller but present left pleural effusion is seen alongside confluent B-lines in the adjacent aerated lung — the combination of effusion and B-lines at the same PLAPS point is a common real-world pattern in decompensated heart failure, consistent with bilateral disease." }
           },
           abdomen: {
-            ruq: { normal: false, gif: "", label: "Dilated hepatic veins, hepatic congestion",
+            ruq: { normal: false, gif: "assets/gifs/common/ruq-normal.gif", label: "Dilated hepatic veins, hepatic congestion",
               interpretation: "The hepatic veins are dilated and plethoric where they drain into the IVC, a sign of passive hepatic congestion from elevated right-sided filling pressures. No free fluid." },
-            luq: { normal: true, gif: "", label: "No free fluid, normal spleen",
+            luq: { normal: true, gif: "assets/gifs/common/luq-normal.gif", label: "No free fluid, normal spleen",
               interpretation: "Spleen and splenorenal recess appear normal, no free fluid." },
-            suprapubic: { normal: true, gif: "", label: "No free fluid",
+            suprapubic: { normal: true, gif: "assets/gifs/common/suprapubic-normal.gif", label: "No free fluid",
               interpretation: "No free fluid in the pelvis." },
-            ivc: { normal: false, gif: "", label: "Plethoric, non-collapsing IVC",
+            ivc: { normal: false, gif: "assets/gifs/sob1-chf/ivc.gif", label: "Plethoric, non-collapsing IVC",
               interpretation: "The IVC is dilated (> 2.1 cm) with less than 50% collapse on sniff, indicating a markedly elevated right atrial pressure and volume-overloaded state — consistent with decompensated heart failure rather than a volume-depleted process." }
           }
         }
@@ -292,11 +292,11 @@ const DATA = {
               interpretation: "A smaller effusion is also present on the left, consistent with the bilateral third-spacing seen in decompensated cirrhosis with severe hypoalbuminemia." }
           },
           abdomen: {
-            ruq: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/RUQ - ascities-pleural effusion.gif", label: "Ascites and a nodular liver surface",
+            ruq: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/ruq-ascites-effusion.gif", label: "Ascites and a nodular liver surface",
               interpretation: "A large amount of free fluid (ascites) surrounds the liver, and the liver itself seems compressed" },
-            luq: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/LUQ - Ascities.gif", label: "Ascites tracking around the spleen",
+            luq: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/luq-ascites.gif", label: "Ascites tracking around the spleen",
               interpretation: "Free fluid is also seen in the splenorenal recess, confirming this is large-volume ascites rather than an isolated perihepatic collection." },
-            suprapubic: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/Suprapubic - ascites.gif", label: "Ascites layering in the pelvis",
+            suprapubic: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/suprapubic-ascites.gif", label: "Ascites layering in the pelvis",
               interpretation: "Free fluid layers in the most dependent pelvic recess, as expected with large-volume ascites in a supine patient." },
             ivc: { normal: false, gif: "assets/gifs/sob2-cirrhosis-pulm-edema/ivc.gif", label: "Dilated IVC from intra-abdominal pressure",
               interpretation: "The IVC appears dilated with reduced respiratory collapse — but in this context that reflects the mechanical effect of markedly elevated intra-abdominal pressure from tense ascites compressing the IVC, not an elevated right atrial pressure from cardiac dysfunction. Pairing this with a hyperdynamic, structurally normal heart is what distinguishes this case from cardiogenic pulmonary edema." }
@@ -342,12 +342,204 @@ const DATA = {
           abdomen: {
             ruq: { normal: true, gif: "assets/gifs/sob3-malignant-effusion/RUQ-Normal.gif", label: "No free fluid, normal liver",
               interpretation: "No free fluid and no obvious hepatic lesions on this screening view, though this is not a substitute for dedicated cross-sectional imaging if metastatic disease is suspected." },
-            luq: { normal: false, gif: "assets/gifs/sob3-malignant-effusion/LUQ - Mass.gif", label: "No free fluid, normal spleen",
-              interpretation: "Solid mass noted above diaphram with para-malignant effusion" },
-            suprapubic: { normal: true, gif: "assets/gifs/sob3-malignant-effusion/Pelvic - Normal.gif", label: "No free fluid",
+            luq: { normal: false, gif: "assets/gifs/sob3-malignant-effusion/luq-mass.gif", label: "Solid mass with paramalignant effusion",
+              interpretation: "A solid, echogenic mass is seen above the diaphragm adjacent to a paramalignant pleural effusion — findings concerning for pleural or subdiaphragmatic metastatic disease in this patient's malignant effusion workup." },
+            suprapubic: { normal: true, gif: "assets/gifs/sob3-malignant-effusion/pelvic-normal.gif", label: "No free fluid",
               interpretation: "No free fluid in the pelvis — the fluid burden in this patient is confined to the left pleural space rather than reflecting a systemic third-spacing process." },
             ivc: { normal: true, gif: "assets/gifs/sob3-malignant-effusion/ivc.gif", label: "Normal caliber and collapse",
               interpretation: "Normal IVC size and respiratory variation, another point against a cardiac or volume-overload explanation for this patient's effusion and dyspnea." }
+          }
+        }
+      },
+      {
+        id: "sob4",
+        title: "Sudden Dyspnea in a Teenage Basketball Player",
+        teaser: "16M, tall and thin, sudden dyspnea and mild right chest discomfort during a game.",
+        hpi: "A 16-year-old boy with no significant past medical history is brought in after developing sudden dyspnea and mild right-sided chest discomfort while playing basketball. He denies trauma, collision, or being struck in the chest. No fever, cough, or prior episodes. He is tall and thin-built.",
+        vitals: { hr: "108", bp: "118/74", rr: "24", spo2: "93% RA", temp: "36.8°C" },
+        exam: "Mildly tachypneic, comfortable at rest. Decreased breath sounds over the right hemithorax with hyperresonance to percussion. Trachea midline. No jugular venous distension, no subcutaneous emphysema.",
+        labs: [
+          { name: "WBC", value: "7.6", unit: "K/µL", flag: "normal" },
+          { name: "Troponin", value: "<0.01", unit: "ng/mL", flag: "normal" },
+          { name: "BNP", value: "18", unit: "pg/mL", flag: "normal" },
+          { name: "D-dimer", value: "280", unit: "ng/mL", flag: "normal" },
+          { name: "Lactate", value: "1.0", unit: "mmol/L", flag: "normal" },
+          { name: "ABG (room air)", value: "pH 7.45, pCO₂ 35, pO₂ 71", unit: "", flag: "low" }
+        ],
+        findings: {
+          cardiac: {
+            pslax: { normal: true, gif: "assets/gifs/common/pslax-normal.gif", label: "Normal LV size and function",
+              interpretation: "Normal chamber size and contractility, no pericardial effusion — no tamponade physiology to explain his symptoms." },
+            psax: { normal: true, gif: "assets/gifs/common/psax-normal.gif", label: "Normal RV and LV size",
+              interpretation: "Normal circular LV cross-section, no septal flattening or RV strain." },
+            apical4: { normal: true, gif: "assets/gifs/common/apical4-normal.gif", label: "Normal four-chamber view",
+              interpretation: "Normal chamber sizes and systolic function, no effusion." },
+            subcostal4: { normal: true, gif: "assets/gifs/common/subcostal4-normal.gif", label: "Normal, used for IVC access",
+              interpretation: "Normal cardiac size and function. Also used to obtain the IVC — see Abdomen tab." }
+          },
+          lung: {
+            anteriorRight: { normal: false, gif: "assets/gifs/sob4-teen-pneumothorax/anterior-right.gif", label: "Absent lung sliding — \"barcode sign\"",
+              interpretation: "No lung sliding is seen at the right anterior chest wall, with loss of the normal seashore sign on M-mode in favor of horizontal \"barcode\" lines. In a supine or reclined patient, free pleural air rises to this least dependent point first, which is why the anterior chest is the most sensitive location to scan for a pneumothorax." },
+            anteriorLeft: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-2.gif", label: "Lung sliding present, A-lines",
+              interpretation: "Normal on the unaffected side." },
+            posteriorRight: { normal: true, gif: "assets/gifs/sob4-teen-pneumothorax/plaps-right.gif", label: "PLAPS point — lung sliding present",
+              interpretation: "Lung sliding is present at this more dependent, posterolateral point even though it was absent anteriorly. Sweeping the probe between the two lets you find the transition — the \"lung point\" — which confirms the diagnosis and gives a rough sense of size: a point found this far laterally suggests a small-to-moderate, hemodynamically simple pneumothorax rather than a large or tension one." },
+            posteriorLeft: { normal: true, gif: "assets/gifs/common/plaps-normal-1.gif", label: "PLAPS point — no effusion",
+              interpretation: "Normal, no effusion or consolidation." }
+          },
+          abdomen: {
+            ruq: { normal: true, gif: "assets/gifs/common/ruq-normal.gif", label: "No free fluid, normal liver",
+              interpretation: "No free fluid, included for completeness in this full scan." },
+            luq: { normal: true, gif: "assets/gifs/common/luq-normal.gif", label: "No free fluid, normal spleen",
+              interpretation: "No free fluid." },
+            suprapubic: { normal: true, gif: "assets/gifs/common/suprapubic-normal.gif", label: "No free fluid",
+              interpretation: "No free fluid in the pelvis." },
+            ivc: { normal: true, gif: "assets/gifs/common/ivc-normal-2.gif", label: "Normal caliber and collapse",
+              interpretation: "Normal IVC size and respiratory variation — a simple, uncomplicated pneumothorax with no evidence of the obstructive shock physiology a tension pneumothorax would cause." }
+          }
+        }
+      },
+      {
+        id: "sob5",
+        title: "New Hypoxia and Fever After a Witnessed Aspiration",
+        teaser: "82F, POD5 from hip fracture repair, witnessed aspiration event, now febrile and hypoxic.",
+        hpi: "An 82-year-old woman, post-operative day 5 from a hip fracture repair, was witnessed by nursing staff to cough and choke while eating dinner, with concern for aspiration. Over the following 24 hours she developed fever, a new productive cough, and increasing supplemental oxygen requirements. She has known mild baseline dysphagia.",
+        vitals: { hr: "110", bp: "128/70", rr: "26", spo2: "89% RA", temp: "38.6°C" },
+        exam: "Acutely confused (new from baseline per family). Crackles and decreased breath sounds at the right lung base with dullness to percussion. Poor, weak cough effort. No calf swelling.",
+        labs: [
+          { name: "WBC", value: "17.2", unit: "K/µL", flag: "high" },
+          { name: "Procalcitonin", value: "2.4", unit: "ng/mL", flag: "high" },
+          { name: "Lactate", value: "2.1", unit: "mmol/L", flag: "high" },
+          { name: "Creatinine", value: "1.3", unit: "mg/dL", flag: "high" },
+          { name: "BNP", value: "60", unit: "pg/mL", flag: "normal" },
+          { name: "Troponin", value: "<0.01", unit: "ng/mL", flag: "normal" }
+        ],
+        findings: {
+          cardiac: {
+            pslax: { normal: true, gif: "assets/gifs/common/pslax-normal.gif", label: "Normal LV size and function",
+              interpretation: "Normal chamber size and contractility, no pericardial effusion — helps exclude a cardiac cause for her new hypoxia and confusion." },
+            psax: { normal: true, gif: "assets/gifs/common/psax-normal.gif", label: "Normal RV and LV size",
+              interpretation: "Normal circular LV cross-section, no septal flattening or RV strain." },
+            apical4: { normal: true, gif: "assets/gifs/common/apical4-normal.gif", label: "Normal four-chamber view",
+              interpretation: "Normal chamber sizes and systolic function, no effusion. A low BNP and a structurally normal heart argue against a cardiac decompensation as the explanation." },
+            subcostal4: { normal: true, gif: "assets/gifs/common/subcostal4-normal.gif", label: "Normal, used for IVC access",
+              interpretation: "Normal cardiac size and function. Also used to obtain the IVC — see Abdomen tab." }
+          },
+          lung: {
+            anteriorRight: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-3.gif", label: "Lung sliding present, A-lines",
+              interpretation: "The anterior right chest is relatively clear. Aspiration pneumonia classically settles in gravity-dependent, posterior segments — especially the right lower lobe, given the more vertical right mainstem bronchus — so the anterior chest can look deceptively normal here." },
+            anteriorLeft: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-1.gif", label: "Lung sliding present, A-lines",
+              interpretation: "Normal, no abnormality on the left." },
+            posteriorRight: { normal: false, gif: "assets/gifs/sob5-aspiration-pneumonia/plaps-right.gif", label: "Consolidation with air bronchograms — \"hepatization\"",
+              interpretation: "At the right PLAPS point, aerated lung is replaced by a tissue-like, echo-dense pattern resembling liver parenchyma, with punctate hyperechoic air bronchograms scattered within it — findings consistent with a dependent, aspiration-pattern pneumonia. A thin rim of adjacent pleural fluid is also visible. This directly corresponds to the crackles and dullness heard on exam at the right base." },
+            posteriorLeft: { normal: true, gif: "assets/gifs/common/plaps-normal-2.gif", label: "PLAPS point — no effusion",
+              interpretation: "Left PLAPS is clear — the process is unilateral and right-sided, consistent with the expected anatomic pattern of aspiration." }
+          },
+          abdomen: {
+            ruq: { normal: true, gif: "assets/gifs/common/ruq-normal.gif", label: "No free fluid, normal liver",
+              interpretation: "No free fluid, normal liver architecture." },
+            luq: { normal: true, gif: "assets/gifs/common/luq-normal.gif", label: "No free fluid, normal spleen",
+              interpretation: "No free fluid." },
+            suprapubic: { normal: true, gif: "assets/gifs/common/suprapubic-normal.gif", label: "No free fluid",
+              interpretation: "No free fluid in the pelvis." },
+            ivc: { normal: true, gif: "assets/gifs/common/ivc-normal-1.gif", label: "Normal caliber and collapse",
+              interpretation: "Normal IVC size and respiratory variation, consistent with adequate intravascular volume despite her reduced oral intake since surgery." }
+          }
+        }
+      },
+      {
+        id: "sob6",
+        title: "Acute-on-Chronic Dyspnea in a Patient with COPD",
+        teaser: "67M with severe COPD on home O2, 2 days of worsening dyspnea and sputum production.",
+        hpi: "A 67-year-old man with severe COPD on 2L home oxygen presents with two days of worsening dyspnea, increased sputum volume, and a change in sputum color from clear to yellow-green, similar in character to his prior exacerbations. No fever, no chest pain, no leg swelling.",
+        vitals: { hr: "102", bp: "138/84", rr: "26", spo2: "87% RA (baseline 91% on 2L)", temp: "37.0°C" },
+        exam: "Diffuse expiratory wheezing bilaterally with a prolonged expiratory phase, decreased breath sounds throughout, barrel-shaped chest, pursed-lip breathing, and use of accessory muscles. No jugular venous distension, no peripheral edema.",
+        labs: [
+          { name: "WBC", value: "11.8", unit: "K/µL", flag: "high" },
+          { name: "BNP", value: "52", unit: "pg/mL", flag: "normal" },
+          { name: "Troponin", value: "<0.01", unit: "ng/mL", flag: "normal" },
+          { name: "ABG", value: "pH 7.32, pCO₂ 62, pO₂ 55", unit: "", flag: "low" },
+          { name: "Lactate", value: "1.4", unit: "mmol/L", flag: "normal" },
+          { name: "Creatinine", value: "0.9", unit: "mg/dL", flag: "normal" }
+        ],
+        findings: {
+          cardiac: {
+            pslax: { normal: true, gif: "assets/gifs/common/pslax-normal.gif", label: "Normal LV size and function",
+              interpretation: "Normal chamber size and contractility, no pericardial effusion. A structurally normal heart with a low BNP argues against a cardiogenic contribution to his dyspnea." },
+            psax: { normal: true, gif: "assets/gifs/common/psax-normal.gif", label: "Normal RV and LV size",
+              interpretation: "Normal circular LV cross-section. No septal flattening — while chronic severe COPD can eventually cause cor pulmonale with RV strain, that is not seen here." },
+            apical4: { normal: true, gif: "assets/gifs/common/apical4-normal.gif", label: "Normal four-chamber view",
+              interpretation: "Normal chamber sizes and systolic function, no effusion." },
+            subcostal4: { normal: true, gif: "assets/gifs/common/subcostal4-normal.gif", label: "Normal, used for IVC access",
+              interpretation: "Normal cardiac size and function. Also used to obtain the IVC — see Abdomen tab." }
+          },
+          lung: {
+            anteriorRight: { normal: true, gif: "assets/gifs/sob6-copd/anterior-right.gif", label: "Lung sliding present, A-lines only",
+              interpretation: "A clean A-line pattern with preserved lung sliding and no B-lines. This is the key finding of this whole case: point-of-care lung ultrasound here is essentially normal, and that normal exam is itself the useful information — it argues against pulmonary edema, pneumonia, effusion, or pneumothorax as the cause of his dyspnea, leaving an obstructive process (his known COPD) as the most likely explanation by exclusion." },
+            anteriorLeft: { normal: true, gif: "assets/gifs/sob6-copd/anterior-left.gif", label: "Lung sliding present, A-lines only",
+              interpretation: "Symmetric, equally clear A-line pattern on the left." },
+            posteriorRight: { normal: true, gif: "assets/gifs/sob6-copd/plaps-right.gif", label: "PLAPS point — normal, with mirror-image artifact",
+              interpretation: "No effusion or consolidation. Above the diaphragm, a mirror-image artifact is visible — liver echotexture appears to be duplicated on the thoracic side of the diaphragm. This is a normal artifact caused by the diaphragm's strong reflectivity, and it's actually a reassuring sign: it only forms when the lung above the diaphragm is well-aerated. Its presence is further evidence against an effusion, which would replace the artifact with true fluid. Don't mistake the mirrored liver tissue for a thoracic mass or consolidation." },
+            posteriorLeft: { normal: true, gif: "assets/gifs/common/plaps-normal-1.gif", label: "PLAPS point — no effusion",
+              interpretation: "No effusion or consolidation." }
+          },
+          abdomen: {
+            ruq: { normal: true, gif: "assets/gifs/common/ruq-normal.gif", label: "No free fluid, normal liver",
+              interpretation: "No free fluid. No hepatic venous congestion, another point against a right heart failure component." },
+            luq: { normal: true, gif: "assets/gifs/common/luq-normal.gif", label: "No free fluid, normal spleen",
+              interpretation: "No free fluid." },
+            suprapubic: { normal: true, gif: "assets/gifs/common/suprapubic-normal.gif", label: "No free fluid",
+              interpretation: "No free fluid in the pelvis." },
+            ivc: { normal: true, gif: "assets/gifs/common/ivc-normal-2.gif", label: "Normal caliber, exaggerated respiratory variation",
+              interpretation: "The IVC is normal in caliber, but shows exaggerated collapse with inspiration — a common pitfall in obstructive lung disease, where the deep, forceful negative intrathoracic pressure swings of labored breathing can make the IVC collapse briskly even in a euvolemic patient. Don't mistake this pattern for hypovolemia in a patient working this hard to breathe; interpret IVC collapse in the context of the patient's respiratory effort." }
+          }
+        }
+      },
+      {
+        id: "sob7",
+        title: "Worsening Fever and Work of Breathing After Bronchiolitis",
+        teaser: "18-month-old, 4 days of bronchiolitis symptoms, now with new fever and focal exam findings.",
+        hpi: "An 18-month-old boy presents with four days of rhinorrhea, cough, and low-grade fever consistent with viral bronchiolitis. Over the last 24 hours he has developed a higher fever, increased work of breathing, grunting noted by his parents, and decreased oral intake and wet diapers.",
+        vitals: { hr: "168", bp: "92/58", rr: "52", spo2: "90% RA", temp: "39.2°C" },
+        exam: "Nasal flaring with subcostal and intercostal retractions. Diffuse wheezing and scattered crackles bilaterally, with focally decreased breath sounds and coarse crackles at the right lower posterior lung field. Tachypneic, mildly lethargic but consolable.",
+        labs: [
+          { name: "WBC", value: "15.6", unit: "K/µL", flag: "high" },
+          { name: "CRP", value: "4.8", unit: "mg/dL", flag: "high" },
+          { name: "RSV/viral panel", value: "positive (RSV)", unit: "", flag: "high" },
+          { name: "Lactate", value: "2.0", unit: "mmol/L", flag: "high" },
+          { name: "Blood culture", value: "pending", unit: "", flag: "normal" },
+          { name: "Creatinine", value: "0.3", unit: "mg/dL", flag: "normal" }
+        ],
+        findings: {
+          cardiac: {
+            pslax: { normal: true, gif: "assets/gifs/common/pslax-normal.gif", label: "Normal LV size and function",
+              interpretation: "Normal chamber size and contractility for age, no pericardial effusion. His tachycardia is proportional to fever and respiratory distress rather than reflecting primary cardiac disease." },
+            psax: { normal: true, gif: "assets/gifs/common/psax-normal.gif", label: "Normal RV and LV size",
+              interpretation: "Normal circular LV cross-section, no septal flattening or RV strain." },
+            apical4: { normal: true, gif: "assets/gifs/common/apical4-normal.gif", label: "Normal four-chamber view",
+              interpretation: "Normal chamber sizes and systolic function, no effusion." },
+            subcostal4: { normal: true, gif: "assets/gifs/common/subcostal4-normal.gif", label: "Normal, used for IVC access",
+              interpretation: "Normal cardiac size and function. Also used to obtain the IVC — see Abdomen tab, though in an active toddler this view (like the others) can be technically limited by patient cooperation." }
+          },
+          lung: {
+            anteriorRight: { normal: false, gif: "assets/gifs/sob7-pediatric-pneumonia/anterior-right.gif", label: "Scattered, patchy B-lines",
+              interpretation: "Multiple non-confluent B-lines are scattered across this zone rather than forming the dense, coalescent \"white lung\" pattern of pulmonary edema. This patchy, multifocal B-line pattern is typical of viral bronchiolitis, reflecting small airway inflammation and patchy atelectasis rather than diffuse alveolar flooding." },
+            anteriorLeft: { normal: false, gif: "assets/gifs/sob7-pediatric-pneumonia/anterior-left.gif", label: "Scattered, patchy B-lines",
+              interpretation: "A similar patchy B-line pattern is seen on the left, consistent with the diffuse, bilateral nature of viral bronchiolitis." },
+            posteriorRight: { normal: false, gif: "assets/gifs/sob7-pediatric-pneumonia/plaps-right.gif", label: "Focal consolidation with an irregular border — \"shred sign\"",
+              interpretation: "In contrast to the patchy, diffuse B-lines elsewhere, this posterolateral zone shows a discrete area of tissue-like consolidation with a jagged, irregular border where it meets aerated lung — the \"shred\" or \"fractal\" sign, a focal finding rather than the diffuse pattern of bronchiolitis alone. This is the sonographic correlate of the focal crackles and decreased breath sounds heard on exam at this location, and is the key finding distinguishing a superimposed focal bacterial pneumonia from bronchiolitis alone." },
+            posteriorLeft: { normal: true, gif: "assets/gifs/common/plaps-normal-1.gif", label: "PLAPS point — no effusion",
+              interpretation: "Clear at this point, no effusion or consolidation — the focal bacterial process appears confined to the right side, with the left lung showing only the background bronchiolitis pattern seen anteriorly rather than a second focal complication." }
+          },
+          abdomen: {
+            ruq: { normal: true, gif: "assets/gifs/common/ruq-normal.gif", label: "No free fluid, normal liver",
+              interpretation: "No free fluid, normal liver architecture for age." },
+            luq: { normal: true, gif: "assets/gifs/common/luq-normal.gif", label: "No free fluid, normal spleen",
+              interpretation: "No free fluid." },
+            suprapubic: { normal: true, gif: "assets/gifs/common/suprapubic-normal.gif", label: "No free fluid",
+              interpretation: "No free fluid in the pelvis; a full bladder can also serve as a rough acoustic window in small children." },
+            ivc: { normal: true, gif: "assets/gifs/common/ivc-normal-1.gif", label: "Normal caliber and collapse",
+              interpretation: "Normal IVC size and respiratory variation. This view is often the most technically difficult to obtain well in a squirming toddler — don't over-interpret a suboptimal window, and consider clinical signs of hydration status (wet diapers, tears, mucous membranes) alongside it." }
           }
         }
       }
@@ -374,23 +566,23 @@ const DATA = {
         ],
         findings: {
           cardiac: {
-            pslax: { normal: true, gif: "", label: "Normal LV size and function",
+            pslax: { normal: true, gif: "assets/gifs/common/pslax-normal.gif", label: "Normal LV size and function",
               interpretation: "Normal chamber size and systolic function, no pericardial effusion." },
-            psax: { normal: true, gif: "", label: "Normal RV and LV size",
+            psax: { normal: true, gif: "assets/gifs/common/psax-normal.gif", label: "Normal RV and LV size",
               interpretation: "Circular LV cross-section, no septal flattening, normal RV size." },
-            apical4: { normal: true, gif: "", label: "Normal four-chamber view",
+            apical4: { normal: true, gif: "assets/gifs/common/apical4-normal.gif", label: "Normal four-chamber view",
               interpretation: "Normal chamber sizes, normal systolic function, no effusion. A normal cardiac exam here helps rule against a cardiorenal component." },
-            subcostal4: { normal: true, gif: "", label: "Normal, used for IVC access",
+            subcostal4: { normal: true, gif: "assets/gifs/common/subcostal4-normal.gif", label: "Normal, used for IVC access",
               interpretation: "Confirms normal cardiac size and function. Also used to obtain the IVC — see Abdomen tab." }
           },
           lung: {
-            anteriorRight: { normal: true, gif: "", label: "Lung sliding present, A-lines",
+            anteriorRight: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-2.gif", label: "Lung sliding present, A-lines",
               interpretation: "Normal A-line pattern, no B-lines — argues against a volume-overloaded state." },
-            anteriorLeft: { normal: true, gif: "", label: "Lung sliding present, A-lines",
+            anteriorLeft: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-3.gif", label: "Lung sliding present, A-lines",
               interpretation: "Symmetric normal exam to the left side." },
-            posteriorRight: { normal: true, gif: "", label: "PLAPS point — no effusion",
+            posteriorRight: { normal: true, gif: "assets/gifs/common/plaps-normal-2.gif", label: "PLAPS point — no effusion",
               interpretation: "No effusion or consolidation." },
-            posteriorLeft: { normal: true, gif: "", label: "PLAPS point — no effusion",
+            posteriorLeft: { normal: true, gif: "assets/gifs/common/plaps-normal-1.gif", label: "PLAPS point — no effusion",
               interpretation: "No effusion or consolidation." }
           },
           abdomen: {
@@ -400,7 +592,7 @@ const DATA = {
               interpretation: "Mild dilation of the left renal pelvis, less pronounced than the right side but confirming a bilateral, and therefore likely bladder-outlet or urethral, level of obstruction." },
             suprapubic: { normal: false, gif: "", label: "Markedly distended bladder",
               interpretation: "The bladder is markedly distended with an estimated volume well over 600 mL, consistent with bladder outlet obstruction from BPH. Post-void residual measurement and Foley catheter placement are indicated." },
-            ivc: { normal: true, gif: "", label: "Normal caliber and collapse",
+            ivc: { normal: true, gif: "assets/gifs/common/ivc-normal-2.gif", label: "Normal caliber and collapse",
               interpretation: "Normal IVC diameter with > 50% collapse on sniff, consistent with euvolemia. Supports a post-renal (obstructive) rather than pre-renal etiology for this AKI." }
           }
         }
@@ -428,33 +620,33 @@ const DATA = {
         ],
         findings: {
           cardiac: {
-            pslax: { normal: true, gif: "", label: "Normal LV size and function",
+            pslax: { normal: true, gif: "assets/gifs/common/pslax-normal.gif", label: "Normal LV size and function",
               interpretation: "Normal cardiac exam, included here for completeness and to establish this as the patient's baseline." },
-            psax: { normal: true, gif: "", label: "Normal RV and LV size",
+            psax: { normal: true, gif: "assets/gifs/common/psax-normal.gif", label: "Normal RV and LV size",
               interpretation: "No abnormality." },
-            apical4: { normal: true, gif: "", label: "Normal four-chamber view",
+            apical4: { normal: true, gif: "assets/gifs/common/apical4-normal.gif", label: "Normal four-chamber view",
               interpretation: "No abnormality." },
-            subcostal4: { normal: true, gif: "", label: "Normal, used for IVC access",
+            subcostal4: { normal: true, gif: "assets/gifs/common/subcostal4-normal.gif", label: "Normal, used for IVC access",
               interpretation: "No abnormality. Also used to obtain the IVC — see Abdomen tab." }
           },
           lung: {
-            anteriorRight: { normal: true, gif: "", label: "Lung sliding present, A-lines",
+            anteriorRight: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-1.gif", label: "Lung sliding present, A-lines",
               interpretation: "Normal, no evidence of a right basilar process mimicking RUQ pain." },
-            anteriorLeft: { normal: true, gif: "", label: "Lung sliding present, A-lines",
+            anteriorLeft: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-2.gif", label: "Lung sliding present, A-lines",
               interpretation: "Normal." },
-            posteriorRight: { normal: true, gif: "", label: "PLAPS point — no effusion",
+            posteriorRight: { normal: true, gif: "assets/gifs/common/plaps-normal-2.gif", label: "PLAPS point — no effusion",
               interpretation: "No right pleural effusion — helps exclude a basilar pneumonia as the cause of this patient's pain." },
-            posteriorLeft: { normal: true, gif: "", label: "PLAPS point — no effusion",
+            posteriorLeft: { normal: true, gif: "assets/gifs/common/plaps-normal-1.gif", label: "PLAPS point — no effusion",
               interpretation: "No abnormality." }
           },
           abdomen: {
             ruq: { normal: false, gif: "", label: "Gallstones, wall thickening, sonographic Murphy's sign",
               interpretation: "A mobile, echogenic focus with posterior acoustic shadowing is seen within the gallbladder lumen, consistent with a gallstone. The gallbladder wall measures greater than 3 mm with a striated appearance, and a thin rim of pericholecystic fluid is present. Direct probe pressure over the gallbladder reproduces the patient's pain — a positive sonographic Murphy's sign. Together these findings are consistent with acute cholecystitis." },
-            luq: { normal: true, gif: "", label: "Normal spleen, no free fluid",
+            luq: { normal: true, gif: "assets/gifs/common/luq-normal.gif", label: "Normal spleen, no free fluid",
               interpretation: "Normal splenic parenchyma, no free fluid in the splenorenal recess." },
-            suprapubic: { normal: true, gif: "", label: "No free fluid",
+            suprapubic: { normal: true, gif: "assets/gifs/common/suprapubic-normal.gif", label: "No free fluid",
               interpretation: "No free fluid in the pelvis, normal bladder." },
-            ivc: { normal: true, gif: "", label: "Normal caliber and collapse",
+            ivc: { normal: true, gif: "assets/gifs/common/ivc-normal-1.gif", label: "Normal caliber and collapse",
               interpretation: "Normal IVC size and respiratory variation." }
           }
         }
@@ -492,13 +684,13 @@ const DATA = {
               interpretation: "Same small, vigorously contracting chambers seen subcostally. Also used to obtain the IVC — see Abdomen tab." }
           },
           lung: {
-            anteriorRight: { normal: true, gif: "", label: "Lung sliding present, A-lines",
+            anteriorRight: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-3.gif", label: "Lung sliding present, A-lines",
               interpretation: "Normal, no pneumothorax, no B-lines — the \"pipes\" of the chest are clear, and there is no evidence of a tension pneumothorax as a cause for this patient's hypotension." },
-            anteriorLeft: { normal: true, gif: "", label: "Lung sliding present, A-lines",
+            anteriorLeft: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-1.gif", label: "Lung sliding present, A-lines",
               interpretation: "Normal, no pneumothorax." },
-            posteriorRight: { normal: true, gif: "", label: "PLAPS point — no effusion",
+            posteriorRight: { normal: true, gif: "assets/gifs/common/plaps-normal-2.gif", label: "PLAPS point — no effusion",
               interpretation: "No hemothorax or effusion." },
-            posteriorLeft: { normal: true, gif: "", label: "PLAPS point — no effusion",
+            posteriorLeft: { normal: true, gif: "assets/gifs/common/plaps-normal-1.gif", label: "PLAPS point — no effusion",
               interpretation: "No hemothorax or effusion." }
           },
           abdomen: {
@@ -508,7 +700,7 @@ const DATA = {
               interpretation: "Anechoic free fluid is also seen in the splenorenal recess and around the inferior pole of the spleen, confirming a large-volume hemoperitoneum rather than a localized collection." },
             suprapubic: { normal: false, gif: "", label: "Free fluid in the pelvis / pouch of Douglas",
               interpretation: "A large amount of free fluid surrounds the bladder and fills the rectouterine pouch (pouch of Douglas), the most dependent space in a supine woman and often the first place free fluid accumulates. In this clinical context this is highly consistent with a ruptured ectopic pregnancy." },
-            ivc: { normal: false, gif: "", label: "Flat, fully collapsing IVC",
+            ivc: { normal: false, gif: "assets/gifs/hypo1-ectopic/ivc.gif", label: "Flat, fully collapsing IVC",
               interpretation: "The IVC is small in caliber (< 1.5 cm) and collapses more than 50% with a sniff, indicating a severely volume-depleted \"tank\" — consistent with ongoing hemorrhage and supporting a need for immediate blood product resuscitation." }
           }
         }
@@ -550,11 +742,11 @@ const DATA = {
               interpretation: "Unlike a small, simple pneumothorax where sliding often persists at a dependent posterior point, sliding is absent here as well — no lung point can be found anywhere across the hemithorax. A large pneumothorax under tension, with no identifiable transition point, is a decompensating emergency and should prompt immediate needle or finger thoracostomy rather than further scanning to \"find the point.\"" }
           },
           abdomen: {
-            ruq: { normal: true, gif: "", label: "No free fluid, normal liver",
+            ruq: { normal: true, gif: "assets/gifs/common/ruq-normal.gif", label: "No free fluid, normal liver",
               interpretation: "No free fluid — helps exclude concomitant intra-abdominal hemorrhage as a contributor to this patient's shock." },
-            luq: { normal: true, gif: "", label: "No free fluid, normal spleen",
+            luq: { normal: true, gif: "assets/gifs/common/luq-normal.gif", label: "No free fluid, normal spleen",
               interpretation: "No free fluid." },
-            suprapubic: { normal: true, gif: "", label: "No free fluid",
+            suprapubic: { normal: true, gif: "assets/gifs/common/suprapubic-normal.gif", label: "No free fluid",
               interpretation: "No free fluid in the pelvis." },
             ivc: { normal: false, gif: "assets/gifs/hypo2-tension-pneumothorax/ivc.gif", label: "Plethoric, non-collapsing IVC — \"full tank, empty pump\"",
               interpretation: "The IVC is dilated and shows minimal respiratory collapse, despite the small, underfilled-appearing heart on cardiac views. This \"full tank but empty pump\" dissociation — a plethoric IVC with small hyperdynamic ventricles — is the signature RUSH exam pattern of obstructive shock, distinguishing it from the flat, collapsing IVC seen in hypovolemic shock (compare with the ruptured ectopic pregnancy case)." }
