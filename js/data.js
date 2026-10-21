@@ -640,7 +640,7 @@ const DATA = {
               interpretation: "No abnormality." }
           },
           abdomen: {
-            ruq: { normal: false, gif: "", label: "Gallstones, wall thickening, sonographic Murphy's sign",
+            ruq: { normal: false, gif: "assets/gifs/ap1-cholecystitis/ruq-cholecystitis.gif", label: "Gallstones, wall thickening, sonographic Murphy's sign",
               interpretation: "A mobile, echogenic focus with posterior acoustic shadowing is seen within the gallbladder lumen, consistent with a gallstone. The gallbladder wall measures greater than 3 mm with a striated appearance, and a thin rim of pericholecystic fluid is present. Direct probe pressure over the gallbladder reproduces the patient's pain — a positive sonographic Murphy's sign. Together these findings are consistent with acute cholecystitis." },
             luq: { normal: true, gif: "assets/gifs/common/luq-normal.gif", label: "Normal spleen, no free fluid",
               interpretation: "Normal splenic parenchyma, no free fluid in the splenorenal recess." },
@@ -648,6 +648,684 @@ const DATA = {
               interpretation: "No free fluid in the pelvis, normal bladder." },
             ivc: { normal: true, gif: "assets/gifs/common/ivc-normal-1.gif", label: "Normal caliber and collapse",
               interpretation: "Normal IVC size and respiratory variation." }
+          }
+        }
+      },
+      {
+        id: "ap2",
+        title: "Unrestrained Driver After a Motor Vehicle Collision",
+        teaser: "29M, hypotensive after a high-speed MVC with right-sided abdominal tenderness.",
+        hpi: "A 29-year-old man is brought in by EMS after an unrestrained, high-speed motor vehicle collision with steering wheel intrusion. He was extricated after 20 minutes. He complains of right-sided abdominal and lower chest pain and feels lightheaded. He has no past medical history and takes no medications. Primary survey: airway patent, breath sounds equal bilaterally, weak radial pulses.",
+        vitals: {
+          hr: "128",
+          bp: "82/48",
+          rr: "26",
+          spo2: "96% on NRB",
+          temp: "36.1°C"
+        },
+        exam: "Pale, diaphoretic, anxious but following commands (GCS 15). Abrasion over the lower right chest wall with tenderness over right ribs 9-11. Abdomen is tender and guarded in the right upper quadrant with early distension. Pelvis stable to compression. No external hemorrhage. Cool extremities with delayed capillary refill.",
+        labs: [
+          {
+            name: "Hemoglobin",
+            value: "9.4",
+            unit: "g/dL",
+            flag: "low"
+          },
+          {
+            name: "Lactate",
+            value: "4.6",
+            unit: "mmol/L",
+            flag: "high"
+          },
+          {
+            name: "Base deficit",
+            value: "-7",
+            unit: "mEq/L",
+            flag: "high"
+          },
+          {
+            name: "INR",
+            value: "1.2",
+            unit: "",
+            flag: "normal"
+          },
+          {
+            name: "AST/ALT",
+            value: "142 / 118",
+            unit: "U/L",
+            flag: "high"
+          },
+          {
+            name: "Creatinine",
+            value: "1.1",
+            unit: "mg/dL",
+            flag: "normal"
+          },
+          {
+            name: "Type and screen",
+            value: "sent, uncrossmatched blood requested",
+            unit: "",
+            flag: "normal"
+          }
+        ],
+        findings: {
+          cardiac: {
+            pslax: {
+              normal: true,
+              gif: "assets/gifs/common/pslax-normal.gif",
+              label: "No pericardial effusion",
+              interpretation: "No pericardial effusion. Normal LV size and function."
+            },
+            psax: {
+              normal: true,
+              gif: "assets/gifs/common/psax-normal.gif",
+              label: "Normal RV and LV size",
+              interpretation: "No abnormality."
+            },
+            apical4: {
+              normal: true,
+              gif: "assets/gifs/common/apical4-normal.gif",
+              label: "Normal four-chamber view",
+              interpretation: "No pericardial effusion, no chamber size abnormality."
+            },
+            subcostal4: {
+              normal: true,
+              gif: "assets/gifs/common/subcostal4-normal.gif",
+              label: "No pericardial effusion",
+              interpretation: "Normal subcostal window. No pericardial fluid, which excludes tamponade as a cause of shock in the trauma patient."
+            }
+          },
+          lung: {
+            anteriorRight: {
+              normal: true,
+              gif: "assets/gifs/common/anterior-lung-normal-1.gif",
+              label: "Lung sliding present",
+              interpretation: "Lung sliding with A-lines. No pneumothorax on the right."
+            },
+            anteriorLeft: {
+              normal: true,
+              gif: "assets/gifs/common/anterior-lung-normal-2.gif",
+              label: "Lung sliding present",
+              interpretation: "Lung sliding with A-lines. No pneumothorax on the left."
+            },
+            posteriorRight: {
+              normal: true,
+              gif: "assets/gifs/common/plaps-normal-2.gif",
+              label: "No hemothorax",
+              interpretation: "No right pleural fluid; spine sign absent above the diaphragm."
+            },
+            posteriorLeft: {
+              normal: true,
+              gif: "assets/gifs/common/plaps-normal-1.gif",
+              label: "No hemothorax",
+              interpretation: "No left pleural fluid; spine sign absent above the diaphragm."
+            }
+          },
+          abdomen: {
+            ruq: {
+              normal: false,
+              gif: "assets/gifs/ap2-efast-morisons/ruq-free-fluid.gif",
+              label: "Free fluid in Morison's pouch (hepatorenal space)",
+              interpretation: "An anechoic stripe separates the liver edge from the right kidney in the hepatorenal space (Morison's pouch), extending along the inferior liver tip. In an unstable blunt trauma patient this is hemoperitoneum until proven otherwise. The most likely sources are liver laceration, right kidney injury, or mesenteric injury."
+            },
+            luq: {
+              normal: true,
+              gif: "assets/gifs/common/luq-normal.gif",
+              label: "No splenorenal free fluid",
+              interpretation: "Normal spleen with no fluid in the splenorenal recess or subphrenic space."
+            },
+            suprapubic: {
+              normal: true,
+              gif: "assets/gifs/common/suprapubic-normal.gif",
+              label: "No pelvic free fluid",
+              interpretation: "No free fluid behind the bladder at this time. Free fluid may accumulate in the pelvis later, so serial exams are important."
+            },
+            ivc: {
+              normal: false,
+              gif: "",
+              label: "Small, collapsing IVC",
+              interpretation: "The IVC is small (under 1 cm) with near-complete inspiratory collapse, consistent with hypovolemia from hemorrhage. The IVC is a trend and not a stand-alone test, but here it supports the clinical picture of hemorrhagic shock."
+            }
+          }
+        }
+      },
+      {
+        id: "ap3",
+        title: "Bicycle Handlebar Injury",
+        teaser: "16M, left upper quadrant and shoulder pain after falling over his bicycle handlebars.",
+        hpi: "A 16-year-old boy is brought in by his parents after being thrown over the handlebars of his bicycle and striking his left flank on a curb. He was not wearing a helmet but did not lose consciousness. He now reports left upper abdominal pain that radiates to the left shoulder and mild lightheadedness when standing. He has no medical problems, takes no medications and is up to date on immunizations.",
+        vitals: {
+          hr: "118",
+          bp: "104/60",
+          rr: "22",
+          spo2: "99% RA",
+          temp: "36.8°C"
+        },
+        exam: "Alert, pale, and uncomfortable. Ecchymosis over the left lower chest and flank. Tenderness over left ribs 9-11 and the left upper quadrant, with voluntary guarding but no rigidity. Left shoulder pain with supine positioning (Kehr sign). Pelvis stable. Cap refill 3 seconds. Pulses are present but thready.",
+        labs: [
+          {
+            name: "Hemoglobin",
+            value: "10.8",
+            unit: "g/dL",
+            flag: "low"
+          },
+          {
+            name: "WBC",
+            value: "16.2",
+            unit: "K/µL",
+            flag: "high"
+          },
+          {
+            name: "Lactate",
+            value: "3.2",
+            unit: "mmol/L",
+            flag: "high"
+          },
+          {
+            name: "AST/ALT",
+            value: "52 / 40",
+            unit: "U/L",
+            flag: "high"
+          },
+          {
+            name: "Urinalysis",
+            value: "trace blood",
+            unit: "",
+            flag: "high"
+          },
+          {
+            name: "Creatinine",
+            value: "0.8",
+            unit: "mg/dL",
+            flag: "normal"
+          }
+        ],
+        findings: {
+          cardiac: {
+            pslax: {
+              normal: true,
+              gif: "assets/gifs/common/pslax-normal.gif",
+              label: "No pericardial effusion",
+              interpretation: "No pericardial effusion. Normal LV size and function."
+            },
+            psax: {
+              normal: true,
+              gif: "assets/gifs/common/psax-normal.gif",
+              label: "Normal RV and LV size",
+              interpretation: "No abnormality."
+            },
+            apical4: {
+              normal: true,
+              gif: "assets/gifs/common/apical4-normal.gif",
+              label: "Normal four-chamber view",
+              interpretation: "No pericardial effusion, no chamber size abnormality."
+            },
+            subcostal4: {
+              normal: true,
+              gif: "assets/gifs/common/subcostal4-normal.gif",
+              label: "No pericardial effusion",
+              interpretation: "Normal subcostal window. No pericardial fluid, which excludes tamponade as a cause of shock in the trauma patient."
+            }
+          },
+          lung: {
+            anteriorRight: {
+              normal: true,
+              gif: "assets/gifs/common/anterior-lung-normal-1.gif",
+              label: "Lung sliding present",
+              interpretation: "Lung sliding with A-lines. No pneumothorax on the right."
+            },
+            anteriorLeft: {
+              normal: true,
+              gif: "assets/gifs/common/anterior-lung-normal-2.gif",
+              label: "Lung sliding present",
+              interpretation: "Lung sliding with A-lines. No pneumothorax on the left."
+            },
+            posteriorRight: {
+              normal: true,
+              gif: "assets/gifs/common/plaps-normal-2.gif",
+              label: "No hemothorax",
+              interpretation: "No right pleural fluid; spine sign absent above the diaphragm."
+            },
+            posteriorLeft: {
+              normal: true,
+              gif: "assets/gifs/common/plaps-normal-1.gif",
+              label: "No hemothorax",
+              interpretation: "No left pleural fluid; spine sign absent above the diaphragm."
+            }
+          },
+          abdomen: {
+            ruq: {
+              normal: true,
+              gif: "assets/gifs/common/ruq-normal.gif",
+              label: "No hepatorenal free fluid",
+              interpretation: "Morison's pouch is clear. Normal liver and right kidney."
+            },
+            luq: {
+              normal: false,
+              gif: "assets/gifs/ap3-efast-splenorenal/luq-free-fluid.gif",
+              label: "Free fluid in the splenorenal space",
+              interpretation: "Anechoic fluid is seen between the spleen and the left kidney and tracks up around the spleen into the subphrenic space. The splenic tip may appear irregular or heterogeneous in a splenic laceration. The left upper quadrant is the most dependent site for fluid when the patient is supine and the left side is the most common area to see fluid in a splenic injury. A hemodynamically borderline child with a positive FAST needs urgent surgical consultation, with CT only if he stabilizes after resuscitation."
+            },
+            suprapubic: {
+              normal: true,
+              gif: "assets/gifs/common/suprapubic-normal.gif",
+              label: "No pelvic free fluid",
+              interpretation: "Normal bladder. No free fluid in the pelvis."
+            },
+            ivc: {
+              normal: true,
+              gif: "assets/gifs/common/ivc-normal-1.gif",
+              label: "Normal caliber and collapse",
+              interpretation: "The IVC is normal size with respiratory variation. Young, previously healthy patients can compensate for significant blood loss before blood pressure drops, so a normal IVC does not exclude hemorrhage."
+            }
+          }
+        }
+      },
+      {
+        id: "ap4",
+        title: "Seat Belt Sign After a Highway Collision",
+        teaser: "33M, restrained driver with lower abdominal pain and a seat belt sign; vitals stable.",
+        hpi: "A 33-year-old man was the restrained driver in a rear-end collision at highway speed with airbag deployment. He was ambulatory at the scene. He reports diffuse lower abdominal pain that is worsening over the last hour. He has no vomiting, no hematuria and no chest pain. He has no medical history and drinks alcohol socially. His last meal was 3 hours ago.",
+        vitals: {
+          hr: "104",
+          bp: "124/78",
+          rr: "20",
+          spo2: "98% RA",
+          temp: "36.9°C"
+        },
+        exam: "Alert and oriented, in mild distress. Horizontal linear ecchymosis across the lower abdomen (seat belt sign). Diffuse lower abdominal tenderness with voluntary guarding, worst in the suprapubic region. Bowel sounds are decreased. Pelvis stable. No gross hematuria on rectal exam, normal tone, no blood.",
+        labs: [
+          {
+            name: "Hemoglobin",
+            value: "13.6",
+            unit: "g/dL",
+            flag: "normal"
+          },
+          {
+            name: "WBC",
+            value: "15.1",
+            unit: "K/µL",
+            flag: "high"
+          },
+          {
+            name: "Lactate",
+            value: "2.4",
+            unit: "mmol/L",
+            flag: "high"
+          },
+          {
+            name: "Lipase",
+            value: "38",
+            unit: "U/L",
+            flag: "normal"
+          },
+          {
+            name: "Urinalysis",
+            value: "no blood",
+            unit: "",
+            flag: "normal"
+          },
+          {
+            name: "Creatinine",
+            value: "0.9",
+            unit: "mg/dL",
+            flag: "normal"
+          }
+        ],
+        findings: {
+          cardiac: {
+            pslax: {
+              normal: true,
+              gif: "assets/gifs/common/pslax-normal.gif",
+              label: "No pericardial effusion",
+              interpretation: "No pericardial effusion. Normal LV size and function."
+            },
+            psax: {
+              normal: true,
+              gif: "assets/gifs/common/psax-normal.gif",
+              label: "Normal RV and LV size",
+              interpretation: "No abnormality."
+            },
+            apical4: {
+              normal: true,
+              gif: "assets/gifs/common/apical4-normal.gif",
+              label: "Normal four-chamber view",
+              interpretation: "No pericardial effusion, no chamber size abnormality."
+            },
+            subcostal4: {
+              normal: true,
+              gif: "assets/gifs/common/subcostal4-normal.gif",
+              label: "No pericardial effusion",
+              interpretation: "Normal subcostal window. No pericardial fluid, which excludes tamponade as a cause of shock in the trauma patient."
+            }
+          },
+          lung: {
+            anteriorRight: {
+              normal: true,
+              gif: "assets/gifs/common/anterior-lung-normal-1.gif",
+              label: "Lung sliding present",
+              interpretation: "Lung sliding with A-lines. No pneumothorax on the right."
+            },
+            anteriorLeft: {
+              normal: true,
+              gif: "assets/gifs/common/anterior-lung-normal-2.gif",
+              label: "Lung sliding present",
+              interpretation: "Lung sliding with A-lines. No pneumothorax on the left."
+            },
+            posteriorRight: {
+              normal: true,
+              gif: "assets/gifs/common/plaps-normal-2.gif",
+              label: "No hemothorax",
+              interpretation: "No right pleural fluid; spine sign absent above the diaphragm."
+            },
+            posteriorLeft: {
+              normal: true,
+              gif: "assets/gifs/common/plaps-normal-1.gif",
+              label: "No hemothorax",
+              interpretation: "No left pleural fluid; spine sign absent above the diaphragm."
+            }
+          },
+          abdomen: {
+            ruq: {
+              normal: true,
+              gif: "assets/gifs/common/ruq-normal.gif",
+              label: "No hepatorenal free fluid",
+              interpretation: "Morison's pouch is clear."
+            },
+            luq: {
+              normal: true,
+              gif: "assets/gifs/common/luq-normal.gif",
+              label: "No splenorenal free fluid",
+              interpretation: "Splenorenal recess is clear. Normal spleen."
+            },
+            suprapubic: {
+              normal: false,
+              gif: "assets/gifs/ap4-efast-pelvic/suprapubic-free-fluid.gif",
+              label: "Free fluid behind the bladder (retrovesical space)",
+              interpretation: "Anechoic fluid is seen posterior and superior to the bladder in the retrovesical pouch (rectovesical pouch in men), with bowel loops outlined by fluid. The pelvis is the most dependent part of the peritoneal cavity in the supine patient, so small volumes collect here first. Free fluid with a seat belt sign and no solid organ injury should raise concern for bowel or mesenteric injury. CT with IV contrast is appropriate if the patient remains stable, and the surgical team should be notified. Serial exams are recommended."
+            },
+            ivc: {
+              normal: true,
+              gif: "assets/gifs/common/ivc-normal-2.gif",
+              label: "Normal caliber and collapse",
+              interpretation: "Normal IVC. The patient is currently compensated."
+            }
+          }
+        }
+      },
+      {
+        id: "ap5",
+        title: "Sudden Severe Flank Pain",
+        teaser: "34M, abrupt right flank pain radiating to the groin with hematuria and vomiting.",
+        hpi: "A 34-year-old man presents with 4 hours of severe, colicky right flank pain that began abruptly and radiates to his right groin and testicle. He cannot find a comfortable position. He has vomited twice and noticed pink urine. No fevers, dysuria or prior stones. He takes no medications. He has a family history of kidney stones.",
+        vitals: {
+          hr: "98",
+          bp: "148/92",
+          rr: "18",
+          spo2: "99% RA",
+          temp: "37.0°C"
+        },
+        exam: "Writhing and unable to lie still. Right costovertebral angle tenderness. Abdomen soft, nondistended, mildly tender in the right lower quadrant without guarding or rebound. Normal testicular exam. No rash.",
+        labs: [
+          {
+            name: "Urinalysis",
+            value: "large blood, no nitrite, no leukocyte esterase",
+            unit: "",
+            flag: "high"
+          },
+          {
+            name: "WBC",
+            value: "10.9",
+            unit: "K/µL",
+            flag: "normal"
+          },
+          {
+            name: "Creatinine",
+            value: "1.1",
+            unit: "mg/dL",
+            flag: "normal"
+          },
+          {
+            name: "BUN",
+            value: "16",
+            unit: "mg/dL",
+            flag: "normal"
+          },
+          {
+            name: "Calcium",
+            value: "9.4",
+            unit: "mg/dL",
+            flag: "normal"
+          },
+          {
+            name: "Lactate",
+            value: "1.1",
+            unit: "mmol/L",
+            flag: "normal"
+          }
+        ],
+        findings: {
+          cardiac: {
+            pslax: {
+              normal: true,
+              gif: "assets/gifs/common/pslax-normal.gif",
+              label: "No pericardial effusion",
+              interpretation: "No pericardial effusion. Normal LV size and function."
+            },
+            psax: {
+              normal: true,
+              gif: "assets/gifs/common/psax-normal.gif",
+              label: "Normal RV and LV size",
+              interpretation: "No abnormality."
+            },
+            apical4: {
+              normal: true,
+              gif: "assets/gifs/common/apical4-normal.gif",
+              label: "Normal four-chamber view",
+              interpretation: "No pericardial effusion, no chamber size abnormality."
+            },
+            subcostal4: {
+              normal: true,
+              gif: "assets/gifs/common/subcostal4-normal.gif",
+              label: "Normal, used for IVC access",
+              interpretation: "No abnormality. Also used to obtain the IVC; see the Abdomen tab."
+            }
+          },
+          lung: {
+            anteriorRight: {
+              normal: true,
+              gif: "assets/gifs/common/anterior-lung-normal-1.gif",
+              label: "Lung sliding present",
+              interpretation: "Lung sliding with A-lines. No pneumothorax on the right."
+            },
+            anteriorLeft: {
+              normal: true,
+              gif: "assets/gifs/common/anterior-lung-normal-2.gif",
+              label: "Lung sliding present",
+              interpretation: "Lung sliding with A-lines. No pneumothorax on the left."
+            },
+            posteriorRight: {
+              normal: true,
+              gif: "assets/gifs/common/plaps-normal-2.gif",
+              label: "PLAPS point: no effusion",
+              interpretation: "No pleural effusion."
+            },
+            posteriorLeft: {
+              normal: true,
+              gif: "assets/gifs/common/plaps-normal-1.gif",
+              label: "PLAPS point: no effusion",
+              interpretation: "No pleural effusion. A lower lobe process is not the cause of the flank pain."
+            }
+          },
+          abdomen: {
+            ruq: {
+              normal: false,
+              gif: "assets/gifs/ap5-renal-colic/ruq-hydronephrosis.gif",
+              label: "Severe right hydronephrosis",
+              interpretation: "The right renal collecting system is markedly dilated with anechoic fluid replacing the central echo complex, rounded calyces and a dilated renal pelvis (a \"bear paw\" or \"cluster of grapes\" appearance), and a thinned renal cortex. Severe hydronephrosis in a patient with typical colic strongly suggests an obstructing ureteral stone. Scan the full length of the kidney and look for perinephric fluid, which suggests forniceal rupture. Because the patient is afebrile with a normal creatinine, he can be managed with analgesia, antiemetics, and urology follow-up. If fever, infected urine, a solitary kidney or AKI were present, urgent decompression would be required."
+            },
+            luq: {
+              normal: true,
+              gif: "assets/gifs/ap5-renal-colic/luq-kidney-normal.gif",
+              label: "Normal left kidney",
+              interpretation: "No hydronephrosis of the left kidney. Normal spleen and no free fluid. The normal contralateral kidney is a useful comparison."
+            },
+            suprapubic: {
+              normal: true,
+              gif: "assets/gifs/ap5-renal-colic/suprapubic-bladder-jets.gif",
+              label: "Normal bladder, no free fluid",
+              interpretation: "Bladder is well distended with no stone or mass, and ureteral jets are visible. In an obstructing stone the jet from the affected side is often reduced or absent, so comparing the two sides can add supporting information. No free fluid."
+            },
+            ivc: {
+              normal: true,
+              gif: "assets/gifs/common/ivc-normal-1.gif",
+              label: "Normal caliber and collapse",
+              interpretation: "Normal IVC. The patient is euvolemic."
+            }
+          }
+        }
+      },
+      {
+        id: "ap6",
+        title: "Right Upper Quadrant Pain with Jaundice",
+        teaser: "62F, fever, RUQ pain and jaundice with elevated bilirubin.",
+        hpi: "A 62-year-old woman presents with 2 days of worsening right upper quadrant pain, fevers with shaking chills, and yellow eyes. She has had intermittent postprandial RUQ pain for several months that she attributed to indigestion. She has had dark urine and pale stools for the past day. She has hypertension and takes lisinopril. No alcohol use.",
+        vitals: {
+          hr: "112",
+          bp: "104/62",
+          rr: "22",
+          spo2: "97% RA",
+          temp: "38.9°C"
+        },
+        exam: "Ill-appearing, with scleral icterus and jaundiced skin. Dry mucous membranes. Marked RUQ tenderness with voluntary guarding and a positive Murphy's sign. No peritoneal signs. Mentation is normal.",
+        labs: [
+          {
+            name: "WBC",
+            value: "17.6",
+            unit: "K/µL",
+            flag: "high"
+          },
+          {
+            name: "AST/ALT",
+            value: "142 / 168",
+            unit: "U/L",
+            flag: "high"
+          },
+          {
+            name: "Alkaline phosphatase",
+            value: "312",
+            unit: "U/L",
+            flag: "high"
+          },
+          {
+            name: "Total bilirubin",
+            value: "4.8",
+            unit: "mg/dL",
+            flag: "high"
+          },
+          {
+            name: "Direct bilirubin",
+            value: "3.6",
+            unit: "mg/dL",
+            flag: "high"
+          },
+          {
+            name: "Lipase",
+            value: "64",
+            unit: "U/L",
+            flag: "normal"
+          },
+          {
+            name: "Lactate",
+            value: "2.1",
+            unit: "mmol/L",
+            flag: "high"
+          },
+          {
+            name: "Creatinine",
+            value: "1.3",
+            unit: "mg/dL",
+            flag: "high"
+          }
+        ],
+        findings: {
+          cardiac: {
+            pslax: {
+              normal: true,
+              gif: "assets/gifs/common/pslax-normal.gif",
+              label: "No pericardial effusion",
+              interpretation: "No pericardial effusion. Normal LV size and function."
+            },
+            psax: {
+              normal: true,
+              gif: "assets/gifs/common/psax-normal.gif",
+              label: "Normal RV and LV size",
+              interpretation: "No abnormality."
+            },
+            apical4: {
+              normal: true,
+              gif: "assets/gifs/common/apical4-normal.gif",
+              label: "Normal four-chamber view",
+              interpretation: "No pericardial effusion, no chamber size abnormality."
+            },
+            subcostal4: {
+              normal: true,
+              gif: "assets/gifs/common/subcostal4-normal.gif",
+              label: "Normal, used for IVC access",
+              interpretation: "No pericardial effusion. Also used to obtain the IVC; see the Abdomen tab."
+            }
+          },
+          lung: {
+            anteriorRight: {
+              normal: true,
+              gif: "assets/gifs/common/anterior-lung-normal-1.gif",
+              label: "Lung sliding present",
+              interpretation: "Lung sliding with A-lines. No pneumothorax on the right."
+            },
+            anteriorLeft: {
+              normal: true,
+              gif: "assets/gifs/common/anterior-lung-normal-2.gif",
+              label: "Lung sliding present",
+              interpretation: "Lung sliding with A-lines. No pneumothorax on the left."
+            },
+            posteriorRight: {
+              normal: true,
+              gif: "assets/gifs/common/plaps-normal-2.gif",
+              label: "No hemothorax",
+              interpretation: "No right pleural fluid; spine sign absent above the diaphragm."
+            },
+            posteriorLeft: {
+              normal: true,
+              gif: "assets/gifs/common/plaps-normal-1.gif",
+              label: "No hemothorax",
+              interpretation: "No left pleural fluid; spine sign absent above the diaphragm."
+            }
+          },
+          abdomen: {
+            ruq: {
+              normal: false,
+              gif: "assets/gifs/ap6-cbd-stone/ruq-choledocholithiasis.gif",
+              label: "Gallstones with wall thickening and a dilated CBD containing a stone",
+              interpretation: "The gallbladder contains multiple echogenic stones with posterior shadowing, a thickened wall (greater than 3 mm), pericholecystic fluid and a positive sonographic Murphy's sign, consistent with acute cholecystitis. Turning to the porta hepatis, the common bile duct is dilated, measuring about 10 mm (normal is under 6 mm, allowing roughly 1 mm per decade over age 60), and runs parallel to the portal vein, giving a \"double barrel shotgun\" or \"parallel channel\" sign. An echogenic focus with posterior shadowing in the distal CBD is an obstructing stone (choledocholithiasis). Together with fever, jaundice and RUQ pain (Charcot triad), this is acute cholangitis with concurrent cholecystitis. This patient needs IV fluids, blood cultures, broad-spectrum antibiotics, and urgent biliary decompression by ERCP. Ultrasound can miss distal CBD stones because bowel gas obscures the distal duct."
+            },
+            luq: {
+              normal: true,
+              gif: "assets/gifs/common/luq-normal.gif",
+              label: "Normal spleen, no free fluid",
+              interpretation: "No free fluid and no abnormality."
+            },
+            suprapubic: {
+              normal: true,
+              gif: "assets/gifs/common/suprapubic-normal.gif",
+              label: "No free fluid",
+              interpretation: "Normal bladder. No ascites."
+            },
+            ivc: {
+              normal: true,
+              gif: "assets/gifs/common/ivc-normal-2.gif",
+              label: "Normal caliber and collapse",
+              interpretation: "Normal IVC size with respiratory variation. Even so, she is septic and dehydrated, so fluid responsiveness should be judged with the clinical exam and serial reassessment."
+            }
           }
         }
       }
