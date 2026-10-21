@@ -678,12 +678,6 @@ const DATA = {
             flag: "high"
           },
           {
-            name: "Base deficit",
-            value: "-7",
-            unit: "mEq/L",
-            flag: "high"
-          },
-          {
             name: "INR",
             value: "1.2",
             unit: "",
@@ -782,9 +776,9 @@ const DATA = {
             },
             ivc: {
               normal: false,
-              gif: "",
-              label: "Small, collapsing IVC",
-              interpretation: "The IVC is small (under 1 cm) with near-complete inspiratory collapse, consistent with hypovolemia from hemorrhage. The IVC is a trend and not a stand-alone test, but here it supports the clinical picture of hemorrhagic shock."
+              gif: "assets/gifs/ap2-efast-morisons/ivc-hyperdynamic.gif",
+              label: "Hyperdynamic IVC",
+              interpretation: "The IVC is small (under 1 cm) and hyperdynamic, with near-complete inspiratory collapse, consistent with hypovolemia from hemorrhage. The IVC is a trend and not a stand-alone test, but here it supports the clinical picture of hemorrhagic shock."
             }
           }
         }
@@ -801,7 +795,7 @@ const DATA = {
           spo2: "99% RA",
           temp: "36.8°C"
         },
-        exam: "Alert, pale, and uncomfortable. Ecchymosis over the left lower chest and flank. Tenderness over left ribs 9-11 and the left upper quadrant, with voluntary guarding but no rigidity. Left shoulder pain with supine positioning (Kehr sign). Pelvis stable. Cap refill 3 seconds. Pulses are present but thready.",
+        exam: "Alert, pale, and uncomfortable. Ecchymosis over the left lower chest and flank. Tenderness over left ribs 9-11 and the left upper quadrant, with voluntary guarding but no rigidity. Left shoulder pain with supine positioning. Pelvis stable. Cap refill 3 seconds. Pulses are present but thready.",
         labs: [
           {
             name: "Hemoglobin",
