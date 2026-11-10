@@ -1,5 +1,16 @@
 {
   "assets/gifs/cp4-gi-bleed/pslax.mp4": "bank/CARDIAC/PSLAX - hyperdynamic- hypovolemic.gif",
   "assets/gifs/cp4-gi-bleed/apical4.mp4": "bank/CARDIAC/Apical 4 - Hyperdynamic - hypovolemic.gif",
-  "assets/gifs/cp4-gi-bleed/ivc.gif": "bank/IVC/IVC - hypovolemic 1.gif"
+  "assets/gifs/cp4-gi-bleed/ivc.gif": "bank/IVC/IVC - hypovolemic 1.gif",
+  "assets/gifs/cp4-gi-bleed/psax.mp4": "bank/CARDIAC/Cardiac - Normal - PSSax.mp4",
+  "assets/gifs/cp4-gi-bleed/subcostal4.mp4": "bank/CARDIAC/Cardiac - Normal - Subxiphoid.mp4",
+  "assets/gifs/cp4-gi-bleed/anterior-right.mp4": "bank/LUNG/Lungs - A-lines2.mp4",
+  "assets/gifs/cp4-gi-bleed/plaps-right.mp4": "bank/LUNG/Lungs - No Pleural Effusion (1).mp4",
+  "assets/gifs/cp5-tamponade/pslax.mp4": "bank/CARDIAC/Cardiac - Tamponade - PSLAx.mp4",
+  "assets/gifs/cp5-tamponade/psax.mp4": "bank/CARDIAC/Cardiac - Tamponade - PSSAx.mp4",
+  "assets/gifs/cp5-tamponade/apical4.mp4": "bank/CARDIAC/Cardiac - Tamponade - A4c.mp4",
+  "assets/gifs/cp5-tamponade/subcostal4.mp4": "bank/CARDIAC/Cardiac - Tamponade - Subx.mp4",
+  "assets/gifs/cp5-tamponade/ivc.mp4": "bank/IVC/IVC - plethoric 4.gif",
+  "assets/gifs/cp5-tamponade/anterior-right.mp4": "bank/LUNG/Lungs - A-lines2.mp4",
+  "assets/gifs/cp5-tamponade/plaps-right.mp4": "bank/LUNG/Lungs - No Pleural Effusion (1).mp4"
 }
