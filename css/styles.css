@@ -526,7 +526,8 @@ main{ flex:1; padding-bottom: 80px; }
   justify-content:center;
   overflow:hidden;
 }
-.clip-stage img{
+.clip-stage img,
+.clip-stage video{
   width:100%; height:100%; object-fit:contain; background:#000;
 }
 .clip-stage .sweep{

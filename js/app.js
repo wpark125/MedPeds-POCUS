@@ -274,9 +274,15 @@ function wireCaseInteractions(kase){
       btn.classList.add("opened");
       slot.dataset.open = viewKey;
 
-      const stageInner = finding.gif
-        ? `<img src="${esc(finding.gif)}" alt="${esc(meta.full)} clip">`
-        : `<div class="clip-placeholder"><div class="ph-icon">▮▮▮</div>NO CLIP LOADED</div>`;
+      // Clips can be GIFs (shown as images) or MP4s (shown as muted, looping videos)
+      const isVideo = finding.gif && /\.mp4$/i.test(finding.gif);
+      const stageInner = !finding.gif
+        ? null
+        : isVideo
+        ? `<video src="${esc(finding.gif)}" autoplay loop muted playsinline preload="auto" aria-label="${esc(meta.full)} clip"></video>`
+        : `<img src="${esc(finding.gif)}" alt="${esc(meta.full)} clip">`;
+      const stageHtml = stageInner
+        || `<div class="clip-placeholder"><div class="ph-icon">▮▮▮</div>NO CLIP LOADED</div>`;
 
       slot.innerHTML = `
         <div class="reveal">
@@ -285,7 +291,7 @@ function wireCaseInteractions(kase){
             <button class="close-btn" aria-label="Close">&times;</button>
           </div>
           <div class="clip-stage">
-            ${stageInner}
+            ${stageHtml}
             <div class="sweep"></div>
           </div>
           <button class="reveal-toggle" type="button">Show Findings</button>
