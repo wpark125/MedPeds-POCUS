@@ -211,6 +211,54 @@ const DATA = {
               interpretation: "Normal IVC size and respiratory variation, consistent with euvolemia and arguing against a volume-overloaded or obstructive process as the cause of this patient's hypoxia." }
           }
         }
+      },
+      {
+        id: "cp4",
+        title: "Chest Pressure and Lightheadedness in a Man with Coronary Disease",
+        teaser: "66M with prior PCI, two hours of substernal pressure and lightheadedness after standing up.",
+        hpi: "A 66-year-old man with coronary artery disease (drug-eluting stent to the LAD four years ago), hypertension, and osteoarthritis presents with two hours of substernal chest pressure and lightheadedness that began when he stood up from the couch. He nearly fainted in the bathroom. He takes aspirin daily and has been taking over-the-counter naproxen several times a day for the past two weeks for knee pain. He reports mild epigastric discomfort over the past few days and fatigue. He has not noticed his stools. ECG shows sinus tachycardia with 1 mm horizontal ST depression in V4–V6 and no ST elevation. The team is discussing starting the ACS protocol.",
+        vitals: { hr: "124", bp: "94/58", rr: "20", spo2: "98% RA", temp: "36.5°C" },
+        exam: "Pale and diaphoretic, conjunctival pallor. Tachycardic with a regular rhythm, no murmur or rub. JVP not visible. Lungs clear bilaterally. Mild epigastric tenderness without guarding or rebound. Extremities cool with delayed capillary refill. No leg swelling. Rectal exam not yet performed.",
+        labs: [
+          { name: "Hemoglobin", value: "9.8", unit: "g/dL", flag: "low" },
+          { name: "BUN", value: "52", unit: "mg/dL", flag: "high" },
+          { name: "Creatinine", value: "1.2", unit: "mg/dL", flag: "normal" },
+          { name: "Troponin", value: "0.09", unit: "ng/mL", flag: "high" },
+          { name: "Lactate", value: "3.1", unit: "mmol/L", flag: "high" },
+          { name: "BNP", value: "40", unit: "pg/mL", flag: "normal" }
+        ],
+        findings: {
+          cardiac: {
+            pslax: { normal: false, gif: "assets/gifs/cp4-gi-bleed/pslax.mp4", label: "Small, hyperdynamic LV",
+              interpretation: "The LV cavity is small and contracts vigorously, nearly obliterating in systole. There is no pericardial effusion. This is not the picture of an infarcting, failing ventricle — it is an underfilled heart working hard to maintain output. In a patient with chest pain and ST depression, a hyperdynamic LV should make you ask what is draining the tank before you call this a primary coronary event." },
+            psax: { normal: true, gif: "assets/gifs/common/psax-normal.gif", label: "No RV dilation or septal flattening",
+              interpretation: "Round LV cross-section with no septal flattening (no D-sign) and no RV dilation, which argues against a large PE as the cause of his tachycardia and hypotension." },
+            apical4: { normal: false, gif: "assets/gifs/cp4-gi-bleed/apical4.mp4", label: "Small, vigorously contracting chambers",
+              interpretation: "Both ventricles are small and hyperdynamic, with no regional wall motion abnormality evident and no pericardial effusion. A large acute MI severe enough to cause hypotension would usually produce a visible regional wall motion abnormality or reduced function. Here the pump is empty, not failing. Together with the ST depression and troponin bump, this points toward demand ischemia (type 2 MI) from a supply–demand mismatch rather than plaque rupture." },
+            subcostal4: { normal: true, gif: "assets/gifs/common/subcostal4-normal.gif", label: "No pericardial effusion",
+              interpretation: "No pericardial effusion, so tamponade is not the cause of his hypotension. Also used to obtain the IVC — see Abdomen tab." }
+          },
+          lung: {
+            anteriorRight: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-1.gif", label: "Lung sliding present, A-lines",
+              interpretation: "Normal lung sliding with an A-line pattern and no B-lines. No pulmonary edema and no pneumothorax." },
+            anteriorLeft: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-3.gif", label: "Lung sliding present, A-lines",
+              interpretation: "Symmetrically normal. Dry lungs plus a small, hyperdynamic heart is a reassuring combination when you are about to give volume or blood: there is no sign he will tip into pulmonary edema." },
+            posteriorRight: { normal: true, gif: "assets/gifs/common/plaps-normal-1.gif", label: "PLAPS point — no effusion",
+              interpretation: "No pleural effusion or consolidation at the right PLAPS point." },
+            posteriorLeft: { normal: true, gif: "assets/gifs/common/plaps-normal-2.gif", label: "PLAPS point — no effusion",
+              interpretation: "No pleural effusion or consolidation at the left PLAPS point. No hemothorax." }
+          },
+          abdomen: {
+            ruq: { normal: true, gif: "assets/gifs/common/ruq-normal.gif", label: "No free fluid in Morison's pouch",
+              interpretation: "Morison's pouch is clear. Important pitfall: blood inside the GI tract is not free intraperitoneal fluid and will not appear on a FAST exam. A negative FAST rules out large hemoperitoneum, not hemorrhage." },
+            luq: { normal: true, gif: "assets/gifs/common/luq-normal.gif", label: "No free fluid, normal spleen",
+              interpretation: "Splenorenal recess is clear, no free fluid." },
+            suprapubic: { normal: true, gif: "assets/gifs/common/suprapubic-normal.gif", label: "No free fluid",
+              interpretation: "No free fluid in the pelvis. With intraperitoneal bleeding excluded and a ruptured AAA not suggested by his presentation, the history (aspirin plus heavy NSAID use, epigastric discomfort) and the elevated BUN with a normal creatinine point toward an upper GI bleed. Do the rectal exam now." },
+            ivc: { normal: false, gif: "assets/gifs/cp4-gi-bleed/ivc.gif", label: "Small, collapsing IVC",
+              interpretation: "The IVC is small and collapses nearly completely with respiration, consistent with low right atrial pressure and intravascular depletion. Putting it together: an empty heart and an empty IVC with dry lungs and a negative FAST in a hypotensive patient on aspirin and NSAIDs is hemorrhagic shock from a likely upper GI bleed until proven otherwise. Management shifts away from the ACS protocol — do not start anticoagulation. Place two large-bore IVs, send a type and crossmatch, start transfusion, begin an IV proton pump inhibitor, and involve GI for endoscopy. Hold aspirin for now and discuss timing of resumption with cardiology given his stent. Note that the initial hemoglobin often underestimates acute blood loss because equilibration takes hours. Repeat the IVC and cardiac views to track his response to resuscitation." }
+          }
+        }
       }
     ],
     "shortness-of-breath": [
