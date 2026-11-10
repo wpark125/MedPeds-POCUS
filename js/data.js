@@ -231,19 +231,19 @@ const DATA = {
           cardiac: {
             pslax: { normal: false, gif: "assets/gifs/cp4-gi-bleed/pslax.mp4", label: "Small, hyperdynamic LV",
               interpretation: "The LV cavity is small and contracts vigorously, nearly obliterating in systole. There is no pericardial effusion. This is not the picture of an infarcting, failing ventricle — it is an underfilled heart working hard to maintain output. In a patient with chest pain and ST depression, a hyperdynamic LV should make you ask what is draining the tank before you call this a primary coronary event." },
-            psax: { normal: true, gif: "assets/gifs/common/psax-normal.gif", label: "No RV dilation or septal flattening",
+            psax: { normal: true, gif: "assets/gifs/cp4-gi-bleed/psax.mp4", label: "No RV dilation or septal flattening",
               interpretation: "Round LV cross-section with no septal flattening (no D-sign) and no RV dilation, which argues against a large PE as the cause of his tachycardia and hypotension." },
             apical4: { normal: false, gif: "assets/gifs/cp4-gi-bleed/apical4.mp4", label: "Small, vigorously contracting chambers",
               interpretation: "Both ventricles are small and hyperdynamic, with no regional wall motion abnormality evident and no pericardial effusion. A large acute MI severe enough to cause hypotension would usually produce a visible regional wall motion abnormality or reduced function. Here the pump is empty, not failing. Together with the ST depression and troponin bump, this points toward demand ischemia (type 2 MI) from a supply–demand mismatch rather than plaque rupture." },
-            subcostal4: { normal: true, gif: "assets/gifs/common/subcostal4-normal.gif", label: "No pericardial effusion",
+            subcostal4: { normal: true, gif: "assets/gifs/cp4-gi-bleed/subcostal4.mp4", label: "No pericardial effusion",
               interpretation: "No pericardial effusion, so tamponade is not the cause of his hypotension. Also used to obtain the IVC — see Abdomen tab." }
           },
           lung: {
-            anteriorRight: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-1.gif", label: "Lung sliding present, A-lines",
+            anteriorRight: { normal: true, gif: "assets/gifs/cp4-gi-bleed/anterior-right.mp4", label: "Lung sliding present, A-lines",
               interpretation: "Normal lung sliding with an A-line pattern and no B-lines. No pulmonary edema and no pneumothorax." },
             anteriorLeft: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-3.gif", label: "Lung sliding present, A-lines",
               interpretation: "Symmetrically normal. Dry lungs plus a small, hyperdynamic heart is a reassuring combination when you are about to give volume or blood: there is no sign he will tip into pulmonary edema." },
-            posteriorRight: { normal: true, gif: "assets/gifs/common/plaps-normal-1.gif", label: "PLAPS point — no effusion",
+            posteriorRight: { normal: true, gif: "assets/gifs/cp4-gi-bleed/plaps-right.mp4", label: "PLAPS point — no effusion",
               interpretation: "No pleural effusion or consolidation at the right PLAPS point." },
             posteriorLeft: { normal: true, gif: "assets/gifs/common/plaps-normal-2.gif", label: "PLAPS point — no effusion",
               interpretation: "No pleural effusion or consolidation at the left PLAPS point. No hemothorax." }
@@ -257,6 +257,54 @@ const DATA = {
               interpretation: "No free fluid in the pelvis. With intraperitoneal bleeding excluded and a ruptured AAA not suggested by his presentation, the history (aspirin plus heavy NSAID use, epigastric discomfort) and the elevated BUN with a normal creatinine point toward an upper GI bleed. Do the rectal exam now." },
             ivc: { normal: false, gif: "assets/gifs/cp4-gi-bleed/ivc.gif", label: "Small, collapsing IVC",
               interpretation: "The IVC is small and collapses nearly completely with respiration, consistent with low right atrial pressure and intravascular depletion. Putting it together: an empty heart and an empty IVC with dry lungs and a negative FAST in a hypotensive patient on aspirin and NSAIDs is hemorrhagic shock from a likely upper GI bleed until proven otherwise. Management shifts away from the ACS protocol — do not start anticoagulation. Place two large-bore IVs, send a type and crossmatch, start transfusion, begin an IV proton pump inhibitor, and involve GI for endoscopy. Hold aspirin for now and discuss timing of resumption with cardiology given his stent. Note that the initial hemoglobin often underestimates acute blood loss because equilibration takes hours. Repeat the IVC and cardiac views to track his response to resuscitation." }
+          }
+        }
+      },
+      {
+        id: "cp5",
+        title: "Positional Chest Pain and Lightheadedness in a Woman with Breast Cancer",
+        teaser: "47F with metastatic breast cancer, one week of sharp chest pain that eases when leaning forward, now dyspneic and lightheaded.",
+        hpi: "A 47-year-old woman with metastatic breast cancer (known lung and bone metastases, on chemotherapy) presents with one week of sharp, substernal chest pain that is worse lying flat and eases when she sits up and leans forward. Over the past two days she has become progressively short of breath, cannot lie flat, and felt lightheaded and nearly passed out while walking to the bathroom this morning. She denies fever, cough, leg swelling, or recent travel. ECG shows sinus tachycardia with low QRS voltage and beat-to-beat variation in QRS amplitude.",
+        vitals: { hr: "128", bp: "92/76", rr: "26", spo2: "94% RA", temp: "37.2°C" },
+        exam: "Anxious, sitting upright and leaning forward. Jugular venous distension to the angle of the jaw while sitting upright. Heart sounds distant; no murmur. Pulsus paradoxus of 22 mmHg. Lungs clear to auscultation bilaterally. Extremities cool, no leg edema.",
+        labs: [
+          { name: "Troponin", value: "0.03", unit: "ng/mL", flag: "high" },
+          { name: "BNP", value: "110", unit: "pg/mL", flag: "high" },
+          { name: "Lactate", value: "3.4", unit: "mmol/L", flag: "high" },
+          { name: "Creatinine", value: "1.4", unit: "mg/dL", flag: "high" },
+          { name: "Hemoglobin", value: "11.2", unit: "g/dL", flag: "low" },
+          { name: "WBC", value: "7.6", unit: "K/µL", flag: "normal" }
+        ],
+        findings: {
+          cardiac: {
+            pslax: { normal: false, gif: "assets/gifs/cp5-tamponade/pslax.mp4", label: "Large pericardial effusion",
+              interpretation: "A large anechoic (black) pericardial effusion surrounds the heart. In the PSLAX view, the key landmark is the descending thoracic aorta: pericardial fluid tracks anterior to it, between the aorta and the left atrium, while a left pleural effusion stays posterior to it. A large effusion in a hypotensive, tachycardic patient with JVD is tamponade until proven otherwise — the next question is whether the fluid is compressing the right heart." },
+            psax: { normal: false, gif: "assets/gifs/cp5-tamponade/psax.mp4", label: "Circumferential effusion around the LV",
+              interpretation: "In short axis, the effusion wraps all the way around the ventricles. A circumferential effusion is more likely to be hemodynamically significant than a small, loculated pocket. Tamponade is a clinical and physiologic diagnosis, not a size cutoff — what matters is whether pericardial pressure exceeds right-sided filling pressure. Watch the right ventricular free wall for diastolic collapse." },
+            apical4: { normal: false, gif: "assets/gifs/cp5-tamponade/apical4.mp4", label: "Effusion with tamponade physiology",
+              interpretation: "The apical view shows the effusion and the right-sided chambers in the same frame, which makes it a good window to look for the classic tamponade signs: right atrial collapse during ventricular systole (most sensitive, especially if it lasts more than a third of the cardiac cycle) and right ventricular collapse during diastole (more specific). Exaggerated respiratory swinging of the heart can accompany very large effusions and is the echo correlate of electrical alternans on her ECG." },
+            subcostal4: { normal: false, gif: "assets/gifs/cp5-tamponade/subcostal4.mp4", label: "Effusion with right heart compression",
+              interpretation: "The subxiphoid view is often the best window in a sick patient who can't lie flat, and it is the classic approach for pericardiocentesis. Here the effusion is seen between the liver and the right ventricle, with the right heart compressed by the surrounding fluid. This window also gives the depth and location of the largest fluid pocket for a procedural plan. Also used to obtain the IVC — see Abdomen tab." }
+          },
+          lung: {
+            anteriorRight: { normal: true, gif: "assets/gifs/cp5-tamponade/anterior-right.mp4", label: "Lung sliding present, A-lines",
+              interpretation: "Normal lung sliding with an A-line pattern and no B-lines. Clear lungs are an important clue: despite her dyspnea, orthopnea, and JVD, there is no pulmonary edema. Elevated venous pressure with dry lungs points away from left heart failure and toward an obstructive cause — tamponade, massive PE, or tension pneumothorax." },
+            anteriorLeft: { normal: true, gif: "assets/gifs/common/anterior-lung-normal-1.gif", label: "Lung sliding present, A-lines",
+              interpretation: "Lung sliding present on the left as well, so no pneumothorax. Combined with the normal right side, tension pneumothorax is excluded as the cause of her obstructive physiology." },
+            posteriorRight: { normal: true, gif: "assets/gifs/cp5-tamponade/plaps-right.mp4", label: "PLAPS point — no effusion",
+              interpretation: "No pleural effusion or consolidation at the right PLAPS point. Despite her known lung metastases, there is no malignant pleural effusion here to explain her dyspnea." },
+            posteriorLeft: { normal: true, gif: "assets/gifs/common/plaps-normal-2.gif", label: "PLAPS point — no effusion",
+              interpretation: "No left pleural effusion. This confirms that the fluid seen around the heart on the PSLAX view is pericardial, not pleural." }
+          },
+          abdomen: {
+            ruq: { normal: true, gif: "assets/gifs/common/ruq-normal.gif", label: "No free fluid, normal liver",
+              interpretation: "Morison's pouch is clear, no free fluid." },
+            luq: { normal: true, gif: "assets/gifs/common/luq-normal.gif", label: "No free fluid, normal spleen",
+              interpretation: "Splenorenal recess is clear, no free fluid." },
+            suprapubic: { normal: true, gif: "assets/gifs/common/suprapubic-normal.gif", label: "No free fluid",
+              interpretation: "No free fluid in the pelvis." },
+            ivc: { normal: false, gif: "assets/gifs/cp5-tamponade/ivc.mp4", label: "Plethoric IVC, minimal collapse",
+              interpretation: "The IVC is dilated with little to no respiratory collapse, reflecting elevated right atrial pressure. A plethoric IVC is very sensitive for tamponade — a small, collapsing IVC makes tamponade unlikely — though it is not specific, since right heart failure, PE, and volume overload also plethorize the IVC. Putting it together: a large circumferential effusion, right heart compression, a plethoric IVC, clear lungs, hypotension, and pulsus paradoxus is cardiac tamponade, most likely a malignant pericardial effusion. Management: call cardiology for urgent pericardiocentesis (or surgery for a pericardial window). While arranging drainage, support preload with a cautious fluid bolus, and avoid positive-pressure ventilation and intubation if at all possible — sedation and positive intrathoracic pressure can precipitate cardiac arrest. Send the fluid for cytology." }
           }
         }
       }
